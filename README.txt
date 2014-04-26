@@ -30,6 +30,8 @@ Initial release.
 = Width not working =
 If width parameter is not working then it could be due to facebook responsive styling.
 
+= Loading slow =
+If like box loading slow and taking time to populate then make sure you have given right APP ID and url is correct in app settings.
 
 == Screenshots ==
 1. screenshot-1.png
