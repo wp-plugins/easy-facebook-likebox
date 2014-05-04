@@ -15,7 +15,7 @@ Easily embed facebook fan page in WordPress using widget or shortcode. You can u
 
 Features:
 1. Responsive
-2. Generate shortcode using widget form.
+1. Generate shortcode using widget form
 
 == Installation ==
 1. Upload "easy-facebook-likebox" to the "/wp-content/plugins/" directory.
