@@ -13,7 +13,8 @@ Mobile friendly easy to use facebook like box wigdet and shortcode
 == Description ==
 Easily embed facebook fan page in WordPress using widget or shortcode. You can use the shortcode generated after saving the widget. Its completely customizable with lots of optional settings. Its also responsive at the same time.
 
-Features:
+Ordered list: 
+
 1. Responsive
 1. Generate shortcode using widget form
 
