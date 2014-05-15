@@ -46,6 +46,5 @@ If like box loading slow and taking time to populate then make sure you have giv
 == Changelog ==
 =1.0.1=
 * Updated the plugin to avoid possible conflict with other plugins. Must update.
-
 = 1.0.0 =
 * Initial release.
