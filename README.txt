@@ -11,8 +11,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Mobile friendly easy to use facebook like box wigdet and shortcode
 
 == Description ==
-Easily embed facebook fan page in WordPress using widget or shortcode. You can use the shortcode generated after saving the widget. Its completely customizable with lots of optional settings. Its also responsive at the same time.
-Link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax]
+Easily embed facebook fan page in WordPress using widget or shortcode. You can use the shortcode generated after saving the widget. Its completely customizable with lots of optional settings. Its also responsive at the same time. jwebsol.com
+Link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
 
 Features: 
 
