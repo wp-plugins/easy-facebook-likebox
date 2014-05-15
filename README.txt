@@ -17,6 +17,8 @@ Features:
 
 1. Responsive
 1. Generate shortcode using widget form
+1. Likebox in PopUp is coming soon...
+
 
 == Installation ==
 1. Upload "easy-facebook-likebox" to the "/wp-content/plugins/" directory.
@@ -42,5 +44,7 @@ If like box loading slow and taking time to populate then make sure you have giv
 3. screenshot-3.png
 
 == Changelog ==
+=1.0.1=
+* Updated the plugin to avoid possible conflict with other plugins. Must update.
 = 1.0.0 =
 * Initial release.
