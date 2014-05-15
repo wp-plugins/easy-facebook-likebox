@@ -17,7 +17,9 @@ Features:
 
 1. Responsive
 1. Generate shortcode using widget form
-1. Likebox in PopUp is coming soon...
+1. Likebox in PopUp (Modal window) is coming soon...
+
+Link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
 
 
 == Installation ==
@@ -46,5 +48,6 @@ If like box loading slow and taking time to populate then make sure you have giv
 == Changelog ==
 =1.0.1=
 * Updated the plugin to avoid possible conflict with other plugins. Must update.
+
 = 1.0.0 =
 * Initial release.
