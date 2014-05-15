@@ -19,7 +19,7 @@ Features:
 1. Generate shortcode using widget form
 1. Likebox in PopUp (Modal window) is coming soon...
 
-Link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
+[Demo](http://jwebsol.com/easy-facebook-like-box-plugin-demo/ "See this plugin in action").
 
 
 == Installation ==
