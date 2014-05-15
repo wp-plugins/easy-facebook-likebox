@@ -1,10 +1,5 @@
-<?php
+<?php 
 /**
- * The WordPress Plugin Boilerplate.
- *
- * A foundation off of which to build well-documented WordPress plugins that
- * also follow WordPress Coding Standards and PHP best practices.
- *
  * @package   Easy Facebook Likebox
  * @author    Sajid Javed <email@example.com>
  * @license   GPL-2.0+
@@ -100,6 +95,6 @@ if ( is_admin() && ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX ) ) {
 require_once( plugin_dir_path( __FILE__ ) . 'includes/easy-facebook-likebox-widget.php' );
 // register Foo_Widget widget
 function register_fblx_widget() {
-    register_widget( 'Facebook_Like_Box_Widget' );
+    register_widget( 'Easy_Facebook_Like_Box_Widget' );
 }
 add_action( 'widgets_init', 'register_fblx_widget' );

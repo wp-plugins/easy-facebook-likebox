@@ -1,5 +1,5 @@
 <?php 
-class Facebook_Like_Box_Widget extends WP_Widget {
+class Easy_Facebook_Like_Box_Widget extends WP_Widget {
 
 	/**
 	 * Register widget with WordPress.
