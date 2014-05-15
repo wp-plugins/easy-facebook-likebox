@@ -17,10 +17,9 @@ Features:
 
 1. Responsive
 1. Generate shortcode using widget form
+1. Likebox in PopUp is coming soon...
 
 Link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-
-Likebox in PopUp is coming soon....
 
 == Installation ==
 1. Upload "easy-facebook-likebox" to the "/wp-content/plugins/" directory.
