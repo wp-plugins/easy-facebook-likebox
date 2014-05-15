@@ -10,7 +10,7 @@
  * Plugin Name:       Easy Facebook Likebox
  * Plugin URI:        httt://wordpress.org/plugins/easy-facebook-likebox
  * Description:       Easily embed facebook fan page in WordPress using widget or shortcode. You can use the shortcode generated after saving the widget. Its completely customizable with lots of optional settings. Its also responsive at the same time.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Sajid Javed
  * Author URI:        http://jwebsol.com
  * Text Domain:       easy-facebook-likebox
