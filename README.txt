@@ -46,7 +46,11 @@ If like box loading slow and taking time to populate then make sure you have giv
 3. screenshot-3.png
 
 == Changelog ==
-= 1.0.0 =
-* Initial release.
-=1.0.1=
+
+= 1.0.1 =
+
 * Updated the plugin to avoid possible conflict with other plugins. Must update.
+
+= 1.0.0 =
+
+* Initial release.
