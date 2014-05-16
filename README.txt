@@ -28,7 +28,7 @@ Options:
 * Show Faces - show/hide profile photos
 * Stream - show/hide the latest wall posts
 * Header - show/hide the Facebook header
-* border - show/hide the border around the like box
+* Border - show/hide the border around the like box
 
 [Demo](http://jwebsol.com/easy-facebook-like-box-plugin-demo/ "See this plugin in action").
 
