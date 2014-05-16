@@ -13,22 +13,22 @@ Mobile friendly easy to use facebook like box wigdet and shortcode
 == Description ==
 Easily embed facebook fan page in WordPress using widget or shortcode. You can use the shortcode generated after saving the widget. Its completely customizable with lots of optional settings. Its also responsive at the same time.
 
-Options:
-
-* Facebook Page URL – enter an URL address to the Facebook fan page
-* Width – set the width of the module in pixels. The default width is 300px
-* Height – With the stream displayed and 10 connections the default height is 556px. With no connections and no stream the default height is 63px
-* Color Scheme – choose the color scheme for the module
-* Show Faces - show/hide profile photos
-* Stream – show/hide the latest wall posts
-* Header – show/hide the Facebook header
-* border – show/hide the border around the like box
-
 Features: 
 
 1. Responsive
 1. Generate shortcode using widget form
 1. Likebox in PopUp (Modal window) is coming soon...
+
+Options:
+
+* Facebook Page URL - enter an URL address to the Facebook fan page
+* Width - set the width of the module in pixels. The default width is 300px
+* Height - With the stream displayed and 10 connections the default height is 556px. With no connections and no stream the default height is 63px
+* Color Scheme - choose the color scheme for the module
+* Show Faces - show/hide profile photos
+* Stream - show/hide the latest wall posts
+* Header - show/hide the Facebook header
+* border - show/hide the border around the like box
 
 [Demo](http://jwebsol.com/easy-facebook-like-box-plugin-demo/ "See this plugin in action").
 
