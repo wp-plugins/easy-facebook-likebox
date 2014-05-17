@@ -19,6 +19,7 @@ Features:
 1. Generate shortcode using widget form
 1. Likebox in PopUp (Modal window) is coming soon...
 
+
 Options:
 
 * Facebook Page URL - enter an URL address to the Facebook fan page
