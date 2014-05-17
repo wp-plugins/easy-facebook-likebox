@@ -54,7 +54,7 @@ class Easy_Facebook_Like_Box_Widget extends WP_Widget {
 						  'title'		=> '',
 						  'fb_appid'	=>	'',
 						  'fanpage_url' => 'https://www.facebook.com/jwebsol',
-						  'box_width'	=>	300,
+						  'box_width'	=>	250,
 						  'box_height' 	=>  '',
 						  'colorscheme' =>  'light',
 						  'show_faces' => 1,
