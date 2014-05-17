@@ -1,5 +1,5 @@
 <?php
-/**
+/** 
  * Plugin Name.
  *
  * @package   Easy_Facebook_Likebox_Admin
@@ -136,7 +136,7 @@ class Easy_Facebook_Likebox_Admin {
 
 		$screen = get_current_screen();
 		if ( $this->plugin_screen_hook_suffix == $screen->id ) {
-			wp_enqueue_style( $this->plugin_slug .'-admin-styles', plugins_url( 'assets/css/admin.css', __FILE__ ), array(), Plugin_Name::VERSION );
+			wp_enqueue_style( $this->plugin_slug .'-admin-styles', plugins_url( 'assets/css/admin.css', __FILE__ ), array(), Easy_Facebook_Likebox::VERSION );
 		}
 
 	}
@@ -160,7 +160,7 @@ class Easy_Facebook_Likebox_Admin {
 
 		$screen = get_current_screen();
 		if ( $this->plugin_screen_hook_suffix == $screen->id ) {
-			wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'assets/js/admin.js', __FILE__ ), array( 'jquery' ), Plugin_Name::VERSION );
+			wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'assets/js/admin.js', __FILE__ ), array( 'jquery' ), Easy_Facebook_Likebox::VERSION );
 		}
 
 	}
@@ -187,8 +187,8 @@ class Easy_Facebook_Likebox_Admin {
 		 *   For reference: http://codex.wordpress.org/Roles_and_Capabilities
 		 */
 		$this->plugin_screen_hook_suffix = add_options_page(
-			__( 'Page Title', $this->plugin_slug ),
-			__( 'Menu Text', $this->plugin_slug ),
+			__( 'Easy Fcebook Likebox', $this->plugin_slug ),
+			__( 'Easy Fcebook Likebox', $this->plugin_slug ),
 			'manage_options',
 			$this->plugin_slug,
 			array( $this, 'display_plugin_admin_page' )
