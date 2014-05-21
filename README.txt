@@ -57,6 +57,8 @@ If width parameter is not working then it could be due to facebook responsive st
 = Loading slow =
 If like box loading slow and taking time to populate then make sure you have given right APP ID and url is correct in app settings.
 
+[Submit your feedback, suggestions and features request](http://wordpress.org/support/topic/need-feed-back-on-plugin-feature/ "Submit your feedback, suggestions and features request").
+
 == Screenshots ==
 1. screenshot-1.png
 2. screenshot-2.png
