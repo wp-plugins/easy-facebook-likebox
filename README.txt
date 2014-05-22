@@ -11,9 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Mobile friendly easy to use facebook like box wigdet and shortcode
 
 == Description ==
-Easily embed facebook fan page in WordPress using widget or shortcode. You can use the shortcode generated after saving the widget. Its completely customizable with 
-
-lots of optional settings. Its also responsive at the same time.
+Easily embed facebook fan page in WordPress using widget or shortcode. You can use the shortcode generated after saving the widget. Its completely customizable with lots of optional settings. Its also responsive at the same time.
 
 Features: 
 
@@ -26,9 +24,7 @@ Options:
 
 * Facebook Page URL - enter an URL address to the Facebook fan page
 * Width - set the width of the module in pixels. The default width is 250px
-* Height - With the stream displayed and 8 connections the default height is 556px. With no stream displayed and 8 connections the default height is 271px. With no 
-
-connections and no stream the default height is 63px
+* Height - With the stream displayed and 8 connections the default height is 556px. With no stream displayed and 8 connections the default height is 271px. With no connections and no stream the default height is 63px
 * Color Scheme - choose the color scheme for the like box
 * Show Faces - show/hide profile photos
 * Stream - show/hide the latest wall posts
