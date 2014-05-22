@@ -31,7 +31,7 @@ Options:
 * Header - show/hide the Facebook header
 * Border - show/hide the border around the like box
 
-[Demo](http://jwebsol.com/easy-facebook-like-box-plugin-demo/ "See this plugin in action").
+[Demo](http://jwebsol.com/easy-facebook-like-box-plugin-demo/ "See this plugin in action")
 
 
 == Installation ==
