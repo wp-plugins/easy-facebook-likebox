@@ -61,9 +61,13 @@ To submit your feedback, suggestions and features request follow the below link.
 http://wordpress.org/support/topic/need-feed-back-on-plugin-feature/
 
 == Screenshots ==
-1. screenshot-1.png
-2. screenshot-2.png
-3. screenshot-3.png
+1. Facebook like box in light color scheme.
+2. Facebook like box in dark color scheme.
+3. Facebook like box with posts and faces.
+4. Facebook like box with posts only.
+5. Facebook like box in page using shortcode with all options.
+6. Facebook like box backend view with options description.
+
 
 == Changelog ==
 
