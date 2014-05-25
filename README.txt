@@ -11,6 +11,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Mobile friendly easy to use facebook like box wigdet and shortcode
 
 == Description ==
+View our online demo of the Easy Facebook Like Box widget and shortcode [Demo](http://jwebsol.com/easy-facebook-like-box-plugin-demo/ "See this plugin in action")
+
 Easily embed facebook fan page in WordPress using widget or shortcode. You can use the shortcode generated after saving the widget. Its completely customizable with lots of optional settings. Its also responsive at the same time.
 
 Features: 
@@ -31,7 +33,7 @@ Options:
 * Header - show/hide the Facebook header
 * Border - show/hide the border around the like box
 
-[Demo](http://jwebsol.com/easy-facebook-like-box-plugin-demo/ "See this plugin in action")
+
 
 
 == Installation ==
