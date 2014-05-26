@@ -1,15 +1,8 @@
 <?php 
 /**
- * @package   Easy Facebook Likebox
- * @author    Sajid Javed <email@example.com>
- * @license   GPL-2.0+
- * @link      http://example.com
- * @copyright 2014 Your Name or Company Name
- *
- * @wordpress-plugin
  * Plugin Name:       Easy Facebook Likebox
  * Plugin URI:        httt://wordpress.org/plugins/easy-facebook-likebox
- * Description:       Easily embed facebook fan page in WordPress using widget or shortcode. You can use the shortcode generated after saving the widget. Its completely customizable with lots of optional settings. Its also responsive at the same time.
+ * Description:       Facebook like box WordPress plugin allows you easly display facebook like box fan page in your website using either widget or shortcode. You can use the shortcode generated after saving the facebook like box widget. Its completely customizable with lots of optional settings. Its also responsive facebook like box at the same time.
  * Version:           1.0.2
  * Author:            Sajid Javed
  * Author URI:        http://jwebsol.com
