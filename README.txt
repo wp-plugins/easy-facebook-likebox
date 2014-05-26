@@ -8,7 +8,7 @@ Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Mobile friendly easy to use facebook like box wigdet and shortcode.
+Easy facebook like box WordPress plugin allows you to easly display facebook like box fan page posts, like button, and connectons on your website using either widget or shortcode.
 
 == Description ==
 
