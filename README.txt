@@ -1,4 +1,4 @@
-=== Easy Facebook Likebox ===
+=== Easy Facebook Like Box ===
 Contributors: sjaved
 Tags: facebook, facebook likebox, likebox, like box, facebook like box,  facebook like box widget,  facebook like box shortcode, shortcode,  facebook like box plugin, plugin
 Donate link: http://jwebsol.com/?track=donate
