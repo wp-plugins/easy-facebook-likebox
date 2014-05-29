@@ -12,9 +12,18 @@ Easy facebook like box WordPress plugin allows you to display fan page posts, li
 
 == Description ==
 
+Use the easy facebook like box widget to attrackt people to like your facebook fan page from your own website.  Easily embed facebook like box in WordPress using widget or shortcode. You can generate facebook like box shortcode via like box widget. When you save settings in facbook like box widget a shortcode will be generated automatically to use in posts or pages. Easy facebook like box is completely customizable with lots of optional settings. Easy facebook like box is also responsive at the same time.
+
 View our online demo of the Easy Facebook Like Box widget and shortcode [here](http://jwebsol.com/easy-facebook-like-box-plugin-demo/ "See this plugin in action").
 
-Easily embed facebook fan page in WordPress using widget or shortcode. You can use the shortcode generated after saving the widget. Its completely customizable with lots of optional settings. Its also responsive at the same time.
+You can use easy facebook like box in number of ways:
+
+1. Display facebook like box in sidebar using widget.
+
+1. Display facebook like box in posts or pages using shortcode. Genraete shortcode using widget or add this shortcode and modify the values manually. `[efb_likebox fanpage_url="YOU_FB_FANPAGE_URL" fb_appid="OPTIONAL_SEE_FAQ" box_width="WIDTH_OF_BOX_IN_PIXELS" box_height="HEIGHT_OF_BOX_IN_PIXELS" colorscheme="CHOSEN_COLOSCHEME(light/dark)" show_faces="SHOW_CONNECTIONS(1/0)" show_header="SHOW_HEADER(1/0)" show_stream="SHOW_STREAM_POSTS(1/0)" show_border="DISPLAY_BORDER(1/0)" ]`
+
+1. Want to display in a template paste below code along with your optional settings.`<?php echo do_shortcode( '[efb_likebox fanpage_url="YOU_FB_FANPAGE_URL" fb_appid="OPTIONAL_SEE_FAQ" box_width="WIDTH_OF_BOX_IN_PIXELS" box_height="HEIGHT_OF_BOX_IN_PIXELS" colorscheme="CHOSEN_COLOSCHEME(light/dark)" show_faces="SHOW_CONNECTIONS(1/0)" show_header="SHOW_HEADER(1/0)" show_stream="SHOW_STREAM_POSTS(1/0)" show_border="DISPLAY_BORDER(1/0)" ]' ); ?>`
+
 
 Features: 
 
