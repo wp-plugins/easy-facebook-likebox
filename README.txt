@@ -21,7 +21,7 @@ You can use easy facebook like box in number of ways:
 * Display facebook like box in sidebar using widget.
 
 * Display facebook like box in posts or pages using shortcode. Genraete shortcode using widget or add this shortcode and modify the values manually. 
-`[efb_likebox fanpage_url="YOU_FB_FANPAGE_URL" fb_appid="OPTIONAL_SEE_FAQ" box_width="WIDTH_OF_BOX_IN_PIXELS" box_height="HEIGHT_OF_BOX_IN_PIXELS" colorscheme="CHOSEN_COLOSCHEME(light/dark)" show_faces="SHOW_CONNECTIONS(1/0)" show_header="SHOW_HEADER(1/0)" show_stream="SHOW_STREAM_POSTS(1/0)" show_border="DISPLAY_BORDER(1/0)"]`
+`[efb_likebox fanpage_url="YOUR_FB_FANPAGE_URL" fb_appid="OPTIONAL_SEE_FAQ" box_width="WIDTH_OF_BOX_IN_PIXELS" box_height="HEIGHT_OF_BOX_IN_PIXELS" colorscheme="CHOSEN_COLOSCHEME(light/dark)" show_faces="SHOW_CONNECTIONS(1/0)" show_header="SHOW_HEADER(1/0)" show_stream="SHOW_STREAM_POSTS(1/0)" show_border="DISPLAY_BORDER(1/0)"]`
 
 * Want to display in a template paste below code along with your optional settings.
 `<?php echo do_shortcode( '[efb_likebox fanpage_url="YOU_FB_FANPAGE_URL" fb_appid="OPTIONAL_SEE_FAQ" box_width="WIDTH_OF_BOX_IN_PIXELS" box_height="HEIGHT_OF_BOX_IN_PIXELS" colorscheme="CHOSEN_COLOSCHEME(light/dark)" show_faces="SHOW_CONNECTIONS(1/0)" show_header="SHOW_HEADER(1/0)" show_stream="SHOW_STREAM_POSTS(1/0)" show_border="DISPLAY_BORDER(1/0)"]' ); ?>`
