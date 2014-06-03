@@ -12,9 +12,7 @@ Easy facebook like box WordPress plugin allows you to display fan page posts, li
 
 == Description ==
 
-Eeasy facebook like box widget allows you to attrackt people to like your facebook fan page from your own website.  Easily embed facebook like box in WordPress website/blog using widget or shortcode. You can generate facebook like box shortcode via like box widget. 
-
-When you save settings in facbook like box widget a shortcode will be generated automatically to use in posts or pages. Easy facebook like box is completely customizable with lots of optional settings. Easy facebook like box is also responsive at the same time.
+Eeasy facebook like box widget allows you to attrackt people to like your facebook fan page from your own website.  Easily embed facebook like box in WordPress website/blog using widget or shortcode. You can generate facebook like box shortcode via like box widget. When you save settings in facbook like box widget a shortcode will be generated automatically to use in posts or pages. Easy facebook like box is completely customizable with lots of optional settings. Easy facebook like box is also responsive at the same time.
 
 [Click for demo](http://jwebsol.com/easy-facebook-like-box-plugin-demo/ "See this plugin in action")
 
