@@ -19,6 +19,7 @@ Displays a Facebook Like Box. The Facebook Like Box is a social plugin that enab
 
 **Options:**
 
+
 1. Facebook Page URL - enter an URL address to the Facebook fan page
 1. Width - set the width of the module in pixels. The default width is 250px
 1. Height - With the stream displayed and 8 connections the default height is 556px. With no stream displayed and 8 connections the default height is 271px. With no connections and no stream the default height is 63px
