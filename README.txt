@@ -42,9 +42,9 @@ You can use easy facebook like box in number of ways:
 
 Features: 
 
-1. Responsive
+1. Extended optiontional settings to personalize in widget and shortcode
 1. Generate shortcode using widget form
-1. Likebox in PopUp (Modal window) is coming soon...
+1. Likebox in PopUp (Modal window) and responsive likebox option is coming soon...
 
 
 == Installation ==
