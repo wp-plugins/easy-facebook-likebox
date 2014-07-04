@@ -88,7 +88,8 @@ http://wordpress.org/support/topic/need-feed-back-on-plugin-feature/
 
 * Updated the plugin with instructions and major bug fix. Must update.
 
-= 1.0.1 =
+= 1.0.1 =2.cn/g9
+
 
 * Updated the plugin to avoid possible conflict with other plugins. Must update.
 
