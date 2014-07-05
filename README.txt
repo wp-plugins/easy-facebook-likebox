@@ -1,6 +1,6 @@
 === Easy Facebook Like Box ===
 Contributors: sjaved
-Tags: facebook, facebook likebox, likebox, like box, facebook like box,  facebook like box widget,  facebook like box shortcode, shortcode,  facebook like box plugin, facebook like box wordpress plugin, plugin
+Tags: facebook, facebook likebox, likebox, like box, facebook like box,  facebook like box widget,  facebook like box shortcode, shortcode,  facebook like box plugin, plugin
 Donate link: http://jwebsol.com/?track=donate
 Requires at least: 3.3
 Tested up to: 3.9
