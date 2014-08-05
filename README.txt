@@ -3,8 +3,8 @@ Contributors: sjaved
 Tags: facebook, facebook likebox, likebox, like box, facebook like box,  facebook like box widget,  facebook like box shortcode, shortcode,  facebook like box plugin, facebook like box wordpress plugin, plugin
 Donate link: http://jwebsol.com/?track=donate
 Requires at least: 3.3
-Tested up to: 3.9
-Stable tag: 1.0.2
+Tested up to: 3.9.1
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,14 +35,14 @@ You can use easy facebook like box in number of ways:
 * Display facebook like box in sidebar using widget.
 
 * Display facebook like box in posts or pages using shortcode. Genraete shortcode using widget or add this shortcode and modify the values manually. 
-`[efb_likebox fanpage_url="YOUR_FB_FANPAGE_URL" fb_appid="OPTIONAL_SEE_FAQ" box_width="WIDTH_OF_BOX_IN_PIXELS" box_height="HEIGHT_OF_BOX_IN_PIXELS" colorscheme="CHOSEN_COLOSCHEME(light/dark)" show_faces="SHOW_CONNECTIONS(1/0)" show_header="SHOW_HEADER(1/0)" show_stream="SHOW_STREAM_POSTS(1/0)" show_border="DISPLAY_BORDER(1/0)"]`
+`[efb_likebox fanpage_url="YOUR_FB_FANPAGE_URL" fb_appid="OPTIONAL_SEE_FAQ" box_width="WIDTH_OF_BOX_IN_PIXELS" box_height="HEIGHT_OF_BOX_IN_PIXELS" locale="NAME_OF_YOUR_LANGUAGE_LOCAE(default en_US)" responsive="RESPONSIVE_FOR_MOBILE(1/0)" colorscheme="CHOSEN_COLOSCHEME(light/dark)" show_faces="SHOW_CONNECTIONS(1/0)" show_header="SHOW_HEADER(1/0)" show_stream="SHOW_STREAM_POSTS(1/0)" show_border="DISPLAY_BORDER(1/0)"]`
 
 * Want to display in a template paste below code along with your optional settings.
-`<?php echo do_shortcode( '[efb_likebox fanpage_url="YOUR_FB_FANPAGE_URL" fb_appid="OPTIONAL_SEE_FAQ" box_width="WIDTH_OF_BOX_IN_PIXELS" box_height="HEIGHT_OF_BOX_IN_PIXELS" colorscheme="CHOSEN_COLOSCHEME(light/dark)" show_faces="SHOW_CONNECTIONS(1/0)" show_header="SHOW_HEADER(1/0)" show_stream="SHOW_STREAM_POSTS(1/0)" show_border="DISPLAY_BORDER(1/0)"]' ); ?>`
+`<?php echo do_shortcode( '[efb_likebox fanpage_url="YOUR_FB_FANPAGE_URL" fb_appid="OPTIONAL_SEE_FAQ" box_width="WIDTH_OF_BOX_IN_PIXELS" box_height="HEIGHT_OF_BOX_IN_PIXELS" locale="NAME_OF_YOUR_LANGUAGE_LOCAE(default en_US)" responsive="RESPONSIVE_FOR_MOBILE(1/0)" colorscheme="CHOSEN_COLOSCHEME(light/dark)" show_faces="SHOW_CONNECTIONS(1/0)" show_header="SHOW_HEADER(1/0)" show_stream="SHOW_STREAM_POSTS(1/0)" show_border="DISPLAY_BORDER(1/0)"]' ); ?>`
 
 Features: 
 
-1. Extended optiontional settings to personalize in widget and shortcode
+1. Extended optional settings to personalize in widget and shortcode
 1. Generate shortcode using widget form
 1. Likebox in PopUp (Modal window) and responsive likebox option is coming soon...
 
@@ -83,6 +83,11 @@ http://wordpress.org/support/topic/need-feed-back-on-plugin-feature/
 
 
 == Changelog ==
+
+= 1.1.0 =
+
+* Optional responsive like box option is added in this version
+* Multilingual support. Now you can display the like box in over 75 languages by simply selecting from drop down.
 
 = 1.0.2 =
 

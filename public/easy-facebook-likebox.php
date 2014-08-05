@@ -328,6 +328,10 @@ class Easy_Facebook_Likebox {
 			$fb_appid = '395202813876688';
 		}
 		
+		if( empty( $locale ) ){
+			$locale = 'en_US';
+		}
+		
  		$pieces = explode('/', $fanpage_url); // divides the string in pieces where '/' is found
 		$page_name_id = end($pieces); //takes the last piece
  
@@ -335,17 +339,18 @@ class Easy_Facebook_Likebox {
 		$show_faces = ( $show_faces == 1 ) ? 'data-show-faces=true' : 'data-show-faces=false'; 
 		$show_border = ( $show_border == 1 ) ? 'data-show-border=true' : 'data-show-border=false' ;
 		$show_header = ( $show_header == 1 ) ? 'data-header=true' : 'data-header=false';
+		$responsive = ( $responsive == 1 ) ? 'responsive' : '';
  		 
 		$returner = '<div id="fb-root"></div>
 					<script>(function(d, s, id) {
 					  var js, fjs = d.getElementsByTagName(s)[0];
 					  if (d.getElementById(id)) return;
 					  js = d.createElement(s); js.id = id;
-					  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId='.$fb_appid.'";
+					  js.src = "//connect.facebook.net/'.$locale.'/all.js#xfbml=1&appId='.$fb_appid.'";
 					  fjs.parentNode.insertBefore(js, fjs);
 					}(document, \'script\', \'facebook-jssdk\'));</script>';
 					
-		$returner .= '<div class="fb-like-box" data-href="https://www.facebook.com/'.$page_name_id.'" data-colorscheme="'.$colorscheme.'" data-width="'.$box_width.'" data-height="'.$box_height.'" '.$show_faces.' '.$show_header.' '.$show_stream.' '.$show_border.'></div>';
+		$returner .= '<div class="fb-like-box '.$responsive.' " data-href="https://www.facebook.com/'.$page_name_id.'" data-colorscheme="'.$colorscheme.'" data-width="'.$box_width.'" data-height="'.$box_height.'" '.$show_faces.' '.$show_header.' '.$show_stream.' '.$show_border.'></div>';
 		
 /*		echo '<pre>';
 		echo htmlspecialchars($returner);

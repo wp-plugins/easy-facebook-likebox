@@ -49,7 +49,83 @@ class Easy_Facebook_Like_Box_Widget extends WP_Widget {
 		$show_border = ( ! empty( $instance['show_border'] ) ) ? strip_tags( $instance['show_border'] ) : 1;	 
 		$show_header = ( ! empty( $instance['show_header'] ) ) ? strip_tags( $instance['show_header'] ) : 1;*/
 	 
- 	 
+		$locales = array(  'af_ZA' => 'Afrikaans', 
+						   'ar_AR' => 'Arabic', 
+						   'az_AZ' => 'Azeri', 
+						   'be_BY' => 'Belarusian', 
+						   'bg_BG' => 'Bulgarian', 
+						   'bn_IN' => 'Bengali', 
+						   'bs_BA' => 'Bosnian', 
+						   'ca_ES' => 'Catalan', 
+						   'cs_CZ' => 'Czech', 
+						   'cy_GB' => 'Welsh', 
+						   'da_DK' => 'Danish', 
+						   'de_DE' => 'German', 
+						   'el_GR' => 'Greek', 
+						   'en_US' => 'English (US)', 
+						   'en_GB' => 'English (UK)', 
+						   'eo_EO' => 'Esperanto', 
+						   'es_ES' => 'Spanish (Spain)', 
+						   'es_LA' => 'Spanish', 
+						   'et_EE' => 'Estonian', 
+						   'eu_ES' => 'Basque', 
+						   'fa_IR' => 'Persian', 
+						   'fb_LT' => 'Leet Speak', 
+						   'fi_FI' => 'Finnish', 
+						   'fo_FO' => 'Faroese', 
+						   'fr_FR' => 'French (France)', 
+						   'fr_CA' => 'French (Canada)', 
+						   'fy_NL' => 'NETHERLANDS (NL)', 
+						   'ga_IE' => 'Irish', 
+						   'gl_ES' => 'Galician', 
+ 						   'hi_IN' => 'Hindi', 
+						   'hr_HR' => 'Croatian', 
+						   'hu_HU' => 'Hungarian', 
+						   'hy_AM' => 'Armenian', 
+						   'id_ID' => 'Indonesian', 
+						   'is_IS' => 'Icelandic', 
+						   'it_IT' => 'Italian', 
+						   'ja_JP' => 'Japanese', 
+						   'ka_GE' => 'Georgian', 
+						   'km_KH' => 'Khmer', 
+						   'ko_KR' => 'Korean', 
+						   'ku_TR' => 'Kurdish', 
+						   'la_VA' => 'Latin', 
+						   'lt_LT' => 'Lithuanian', 
+						   'lv_LV' => 'Latvian', 
+						   'mk_MK' => 'Macedonian', 
+						   'ml_IN' => 'Malayalam', 
+						   'ms_MY' => 'Malay', 
+						   'nb_NO' => 'Norwegian (bokmal)', 
+						   'ne_NP' => 'Nepali', 
+						   'nl_NL' => 'Dutch', 
+						   'nn_NO' => 'Norwegian (nynorsk)', 
+						   'pa_IN' => 'Punjabi', 
+						   'pl_PL' => 'Polish', 
+						   'ps_AF' => 'Pashto', 
+						   'pt_PT' => 'Portuguese (Portugal)', 
+						   'pt_BR' => 'Portuguese (Brazil)', 
+						   'ro_RO' => 'Romanian', 
+						   'ru_RU' => 'Russian', 
+						   'sk_SK' => 'Slovak', 
+						   'sl_SI' => 'Slovenian', 
+						   'sq_AL' => 'Albanian', 
+						   'sr_RS' => 'Serbian', 
+						   'sv_SE' => 'Swedish', 
+						   'sw_KE' => 'Swahili', 
+						   'ta_IN' => 'Tamil', 
+						   'te_IN' => 'Telugu', 
+						   'th_TH' => 'Thai', 
+						   'tl_PH' => 'Filipino', 
+						   'tr_TR' => 'Turkish', 
+						   'uk_UA' => 'Ukrainian',
+						   'ur_PK' => 'Urdu',
+ 						   'vi_VN' => 'Vietnamese', 
+						   'zh_CN' => 'Simplified Chinese (China)', 
+						   'zh_HK' => 'Traditional Chinese (Hong Kong)', 
+						   'zh_TW' => 'Traditional Chinese (Taiwan)',
+						   );
+		
 		$defaults = array(
 						  'title'		=> '',
 						  'fb_appid'	=>	'',
@@ -61,6 +137,8 @@ class Easy_Facebook_Like_Box_Widget extends WP_Widget {
 						  'show_stream' => 0,
 						  'show_header' => 1,
 						  'show_border' => 1,
+						  'responsive'	=> 0,
+						  'locale' => 'en_US',
 						  );
  		
 		$instance = wp_parse_args( (array) $instance, $defaults );
@@ -96,33 +174,57 @@ class Easy_Facebook_Like_Box_Widget extends WP_Widget {
 		<input class="widefat" id="<?php echo $this->get_field_id( 'box_height' ); ?>" name="<?php echo $this->get_field_name( 'box_height' ); ?>" type="text" value="<?php echo esc_attr( $box_height ); ?>"><br />
  		</p>
         
-        <p>
+       <p class="widget-half">
 		<label for="<?php echo $this->get_field_id( 'colorscheme' ); ?>"><?php _e( 'Colorscheme:' ); ?></label>
-        <select id="<?php echo $this->get_field_id( 'colorscheme' ); ?>" name="<?php echo $this->get_field_name( 'colorscheme' ); ?>">
-        <option <?php selected( $colorscheme, 'light' , $echo = true); ?> value="light">light</option>
-        <option <?php selected( $colorscheme, 'dark', $echo = true); ?> value="dark">dark</option>
-        </select> 
+            <select id="<?php echo $this->get_field_id( 'colorscheme' ); ?>" name="<?php echo $this->get_field_name( 'colorscheme' ); ?>">
+                 <option <?php selected( $colorscheme, 'light' , $echo = true); ?> value="light">light</option>
+                <option <?php selected( $colorscheme, 'dark', $echo = true); ?> value="dark">dark</option>
+            </select> 
   		</p>
+        
+       <p class="widget-half">
+		<label for="<?php echo $this->get_field_id( 'locale' ); ?>"><?php _e( 'Locale:' ); ?></label>
+            <select id="<?php echo $this->get_field_id( 'locale' ); ?>" name="<?php echo $this->get_field_name( 'locale' ); ?>">
+            <?php if($locales){
+						foreach ($locales as $key=>$value){?>
+                <option <?php selected( $locale, $key , $echo = true); ?> value="<?php echo $key?>"><?php echo $value?></option>
+                <?php }
+				}?>
+             </select> 
+             <i>Language</i>
+  		</p>
+        
+        <p class="widget-half">
+	        <input type="checkbox" class="widefat" id="<?php echo $this->get_field_id( 'responsive' ); ?>" name="<?php echo $this->get_field_name( 'responsive' ); ?>" value="1" <?php checked( $responsive, 1 ); ?>>
+			<label for="<?php echo $this->get_field_id( 'responsive' ); ?>">Responsive</label>
+			
+		</p>
           
-        <p>
+        <p class="widget-half">
+	        <input type="checkbox" class="widefat" id="<?php echo $this->get_field_id( 'show_faces' ); ?>" name="<?php echo $this->get_field_name( 'show_faces' ); ?>" value="1" <?php checked( $show_faces, 1 ); ?>>
 			<label for="<?php echo $this->get_field_id( 'show_faces' ); ?>">Show Faces</label>
-			<input type="checkbox" class="widefat" id="<?php echo $this->get_field_id( 'show_faces' ); ?>" name="<?php echo $this->get_field_name( 'show_faces' ); ?>" value="1" <?php checked( $show_faces, 1 ); ?>>
+			
 		</p>
         
-        <p>
-			<label for="<?php echo $this->get_field_id( 'show_stream' ); ?>">Show Posts/Stream</label>
-			<input type="checkbox" class="widefat" id="<?php echo $this->get_field_id( 'show_stream' ); ?>" name="<?php echo $this->get_field_name( 'show_stream' ); ?>" value="1" <?php checked( $show_stream, 1 ); ?>>
+        <p class="widget-half">
+        <input type="checkbox" class="widefat" id="<?php echo $this->get_field_id( 'show_stream' ); ?>" name="<?php echo $this->get_field_name( 'show_stream' ); ?>" value="1" <?php checked( $show_stream, 1 ); ?>>
+			<label for="<?php echo $this->get_field_id( 'show_stream' ); ?>">Show Posts</label>
+			
 		</p>
         
-        <p>
+        <p class="widget-half">
+	        <input type="checkbox" class="widefat" id="<?php echo $this->get_field_id( 'show_border' ); ?>" name="<?php echo $this->get_field_name( 'show_border' ); ?>" value="1" <?php checked( $show_border, 1 ); ?>>
 			<label for="<?php echo $this->get_field_id( 'show_border' ); ?>">Show Border</label>
-			<input type="checkbox" class="widefat" id="<?php echo $this->get_field_id( 'show_border' ); ?>" name="<?php echo $this->get_field_name( 'show_border' ); ?>" value="1" <?php checked( $show_border, 1 ); ?>>
+			
 		</p>
         
-        <p>
+        <p class="widget-half">
+       		<input type="checkbox" class="widefat" id="<?php echo $this->get_field_id( 'show_header' ); ?>" name="<?php echo $this->get_field_name( 'show_header' ); ?>" value="1" <?php checked( $show_header, 1 ); ?>> 
 			<label for="<?php echo $this->get_field_id( 'show_header' ); ?>">Show Header</label>
-			<input type="checkbox" class="widefat" id="<?php echo $this->get_field_id( 'show_header' ); ?>" name="<?php echo $this->get_field_name( 'show_header' ); ?>" value="1" <?php checked( $show_header, 1 ); ?>>
+			
 		</p>
+        
+        <div class="clearfix"></div>
         
         <p>Use Below shortcode to use inside pages or posts</p>
         <?php 
@@ -141,10 +243,12 @@ class Easy_Facebook_Like_Box_Widget extends WP_Widget {
 		if( empty($show_border) ){
 			$show_border = 0;
 		}
+ 		
+		$responsive = (  empty( $responsive ) ) ? strip_tags( 0 ) : $responsive;
 		
 		?>
         
-        <p style="background:#ddd; padding:5px; "><?php echo '[efb_likebox fanpage_url="'.$fanpage_url.'" fb_appid="'.$fb_appid.'" box_width="'.$box_width.'" box_height="'.$box_height.'" colorscheme="'.$colorscheme.'" show_faces="'.$show_faces.'" show_header="'.$show_header.'" show_stream="'.$show_stream.'" show_border="'.$show_border.'" ]'?></p>
+        <p style="background:#ddd; padding:5px; "><?php echo '[efb_likebox fanpage_url="'.$fanpage_url.'" fb_appid="'.$fb_appid.'" box_width="'.$box_width.'" box_height="'.$box_height.'" colorscheme="'.$colorscheme.'" locale="'.$locale.'" responsive="'.$responsive.'" show_faces="'.$show_faces.'" show_header="'.$show_header.'" show_stream="'.$show_stream.'" show_border="'.$show_border.'" ]'?></p>
          
 		<?php 
 	}
@@ -172,6 +276,10 @@ class Easy_Facebook_Like_Box_Widget extends WP_Widget {
 		$instance['box_height'] = ( ! empty( $new_instance['box_height'] ) ) ? strip_tags( $new_instance['box_height'] ) : '';
 		$instance['box_width'] = ( ! empty( $new_instance['box_width'] ) ) ? strip_tags( $new_instance['box_width'] ) : '';
 		$instance['colorscheme'] = ( ! empty( $new_instance['colorscheme'] ) ) ? strip_tags( $new_instance['colorscheme'] ) : '';
+		
+		$instance['responsive'] = ( ! empty( $new_instance['responsive'] ) ) ? strip_tags( $new_instance['responsive'] ) : '';
+		$instance['locale'] = ( ! empty( $new_instance['locale'] ) ) ? strip_tags( $new_instance['locale'] ) : '';
+		
 		
 		return $instance;
 	}
