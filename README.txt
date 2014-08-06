@@ -1,6 +1,6 @@
 === Easy Facebook Like Box ===
 Contributors: sjaved
-Tags: facebook, facebook likebox, likebox, like box, facebook like box,  facebook like box widget,  facebook like box shortcode, shortcode,  facebook like box plugin, facebook like box wordpress plugin, plugin
+Tags: facebook, facebook likebox, likebox, like box, facebook like box,  facebook like box widget,  facebook like box shortcode, shortcode,  facebook like box plugin, facebook like box wordpress plugin, plugin, responsive facebook like box, responsive, facebook like box in 75 locales, facebook like box in 75 languages
 Donate link: http://jwebsol.com/?track=donate
 Requires at least: 3.3
 Tested up to: 3.9.1
@@ -44,6 +44,8 @@ You can use easy facebook like box in number of ways:
 
 Features: 
 
+1. Now support optional **responsive** layout
+1. Support 75 different locales
 1. Extended optional settings to personalize in widget and shortcode
 1. Generate shortcode using widget form
 1. Likebox in PopUp (Modal window) and responsive likebox option is coming soon...
