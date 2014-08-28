@@ -3,8 +3,8 @@ Contributors: sjaved
 Tags: facebook, facebook likebox, likebox, like box, facebook like box,  facebook like box widget,  facebook like box shortcode, shortcode,  facebook like box plugin, facebook like box wordpress plugin, plugin, responsive facebook like box, responsive, facebook like box in 75 locales, facebook like box in 75 languages
 Donate link: http://selz.co/1lw1sZ2
 Requires at least: 3.3
-Tested up to: 3.9.1
-Stable tag: 1.1.0
+Tested up to: 3.9.2
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -87,6 +87,9 @@ http://wordpress.org/support/topic/need-feed-back-on-plugin-feature/
 
 
 == Changelog ==
+= 1.2.0 =
+
+* Added other feild for locale. Input your locale name if you can not find yours in the list.
 
 = 1.1.0 =
 

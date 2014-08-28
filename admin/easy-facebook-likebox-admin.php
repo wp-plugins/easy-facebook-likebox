@@ -1,4 +1,4 @@
-<?php
+<?php 
 /** 
  * Plugin Name.
  *
@@ -19,7 +19,7 @@
  * @TODO: Rename this class to a proper name for your plugin.
  *
  * @package Plugin_Name_Admin
- * @author  Your Name <email@example.com>
+ * @author  Your Name <email@example.com> 
  */
 class Easy_Facebook_Likebox_Admin {
 
@@ -79,9 +79,12 @@ class Easy_Facebook_Likebox_Admin {
 		// Add an action link pointing to the options page.
 		$plugin_basename = plugin_basename( plugin_dir_path( __DIR__ ) . $this->plugin_slug . '.php' );
 		add_filter( 'plugin_action_links_' . $plugin_basename, array( $this, 'add_action_links' ) );
-
-	 
-
+		
+		add_action( 'admin_init', array( $this, 'i_have_supported_efbl') );
+		
+		if ( get_option('I_HAVE_SUPPORTED_THE_EFBL_PLUGIN') != 1 )
+			add_action( 'admin_notices', array( $this, 'post_installtion_upgrade_nag') );
+ 
 	}
 
 	/**
@@ -215,31 +218,40 @@ class Easy_Facebook_Likebox_Admin {
 		);
 
 	}
-
+	
 	/**
-	 * NOTE:     Actions are points in the execution of a page or process
-	 *           lifecycle that WordPress fires.
-	 *
-	 *           Actions:    http://codex.wordpress.org/Plugin_API#Actions
-	 *           Reference:  http://codex.wordpress.org/Plugin_API/Action_Reference
-	 *
-	 * @since    1.0.0
+	 * Display a thank you nag when the plugin has been installed/upgraded.
 	 */
-	public function action_method_name() {
-		// @TODO: Define your action hook callback here
-	}
+	public function post_installtion_upgrade_nag() {
+ 		if ( !current_user_can('install_plugins') ) return;
+		
+		$plugin_verstion = Easy_Facebook_Likebox::VERSION;
+		
+		$version_key = '_efbl_version';
+		$notice_key = '_efbl_notice';
+		
+		//if ( get_site_option( $version_key ) == $plugin_verstion && get_site_option( $notice_key ) == 1 ) return;
 
-	/**
-	 * NOTE:     Filters are points of execution in which WordPress modifies data
-	 *           before saving it or sending it to the browser.
-	 *
-	 *           Filters: http://codex.wordpress.org/Plugin_API#Filters
-	 *           Reference:  http://codex.wordpress.org/Plugin_API/Filter_Reference
-	 *
-	 * @since    1.0.0
-	 */
-	public function filter_method_name() {
-		// @TODO: Define your filter hook callback here
-	}
+		$msg = sprintf(__('Thanks for installting/upgrading the Easy Facebook Likebox Plugin! If you like this plugin, please consider some <a href="%s" target="_blank">donation</a> and/or <a href="%s" target="_blank">rating it</a>! <br><br>
+		<a href="%s" class="button button-primary">I have supported already</a>				  
+		', 'efbl'),
+				'http://selz.co/1lw1sZ2',
+				'http://wordpress.org/plugins/easy-facebook-likebox/',
+				get_admin_url().'?efbl_supported=1'
+				);
+		echo "<div class='update-nag'>$msg</div>";
 
+		//update_site_option( $version_key, $plugin_verstion );
+		//update_site_option( $notice_key, 1 );
+	}
+	
+	function i_have_supported_efbl(){
+		
+		if(isset($_GET['efbl_supported'])) {
+			update_site_option( 'I_HAVE_SUPPORTED_THE_EFBL_PLUGIN', 1 );	
+ 		}
+			
+		/*echo I_HAVE_SUPPORTED_THE_EFBL_PLUGIN;	
+		exit;	*/
+	}
 }

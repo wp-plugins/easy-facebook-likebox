@@ -40,14 +40,7 @@ class Easy_Facebook_Like_Box_Widget extends WP_Widget {
 	 * @param array $instance Previously saved values from database.
 	 */
 	public function form( $instance ) {
- 		
-/*		$title = $instance[ 'title' ];
-		$'title' => 'test', = ( ! empty( $instance['fanpage_url'] ) ) ? strip_tags( $instance['fanpage_url'] ) : '';
-		$fb_appid = $instance[ 'fb_appid' ];		
-		$show_faces = ( ! empty( $instance['show_faces'] ) ) ? strip_tags( $instance['show_faces'] ) : 1;	
-		$show_stream = ( ! empty( $instance['show_stream'] ) ) ? strip_tags( $instance['show_stream'] ) : 1;	 
-		$show_border = ( ! empty( $instance['show_border'] ) ) ? strip_tags( $instance['show_border'] ) : 1;	 
-		$show_header = ( ! empty( $instance['show_header'] ) ) ? strip_tags( $instance['show_header'] ) : 1;*/
+  
 	 
 		$locales = array(  'af_ZA' => 'Afrikaans', 
 						   'ar_AR' => 'Arabic', 
@@ -139,6 +132,7 @@ class Easy_Facebook_Like_Box_Widget extends WP_Widget {
 						  'show_border' => 1,
 						  'responsive'	=> 0,
 						  'locale' => 'en_US',
+						  'locale_other'=> ''
 						  );
  		
 		$instance = wp_parse_args( (array) $instance, $defaults );
@@ -174,16 +168,19 @@ class Easy_Facebook_Like_Box_Widget extends WP_Widget {
 		<input class="widefat" id="<?php echo $this->get_field_id( 'box_height' ); ?>" name="<?php echo $this->get_field_name( 'box_height' ); ?>" type="text" value="<?php echo esc_attr( $box_height ); ?>"><br />
  		</p>
         
-       <p class="widget-half">
+        
+        <p class="widget-half">
 		<label for="<?php echo $this->get_field_id( 'colorscheme' ); ?>"><?php _e( 'Colorscheme:' ); ?></label>
             <select id="<?php echo $this->get_field_id( 'colorscheme' ); ?>" name="<?php echo $this->get_field_name( 'colorscheme' ); ?>">
                  <option <?php selected( $colorscheme, 'light' , $echo = true); ?> value="light">light</option>
                 <option <?php selected( $colorscheme, 'dark', $echo = true); ?> value="dark">dark</option>
             </select> 
   		</p>
-        
+       
        <p class="widget-half">
 		<label for="<?php echo $this->get_field_id( 'locale' ); ?>"><?php _e( 'Locale:' ); ?></label>
+        
+        
             <select id="<?php echo $this->get_field_id( 'locale' ); ?>" name="<?php echo $this->get_field_name( 'locale' ); ?>">
             <?php if($locales){
 						foreach ($locales as $key=>$value){?>
@@ -194,6 +191,13 @@ class Easy_Facebook_Like_Box_Widget extends WP_Widget {
              <i>Language</i>
   		</p>
         
+         <p>
+		<label for="<?php echo $this->get_field_id( 'locale_other' ); ?>"><?php _e( 'Locale (Other):' ); ?></label>
+        <input class="widefat" id="<?php echo $this->get_field_id( 'locale_other' ); ?>" name="<?php echo $this->get_field_name( 'locale_other' ); ?>" type="text" value="<?php echo esc_attr( $locale_other ); ?>" placeholder="en_US">
+              
+             <i>input locale if you can not find yours in dropdown list</i>
+  		</p>
+         
         <p class="widget-half">
 	        <input type="checkbox" class="widefat" id="<?php echo $this->get_field_id( 'responsive' ); ?>" name="<?php echo $this->get_field_name( 'responsive' ); ?>" value="1" <?php checked( $responsive, 1 ); ?>>
 			<label for="<?php echo $this->get_field_id( 'responsive' ); ?>">Responsive</label>
@@ -243,6 +247,11 @@ class Easy_Facebook_Like_Box_Widget extends WP_Widget {
 		if( empty($show_border) ){
 			$show_border = 0;
 		}
+		
+		if( !empty($locale_other) ){
+			$locale = $locale_other;
+		}
+		
  		
 		$responsive = (  empty( $responsive ) ) ? strip_tags( 0 ) : $responsive;
 		
@@ -279,6 +288,7 @@ class Easy_Facebook_Like_Box_Widget extends WP_Widget {
 		
 		$instance['responsive'] = ( ! empty( $new_instance['responsive'] ) ) ? strip_tags( $new_instance['responsive'] ) : '';
 		$instance['locale'] = ( ! empty( $new_instance['locale'] ) ) ? strip_tags( $new_instance['locale'] ) : '';
+		$instance['locale_other'] = ( ! empty( $new_instance['locale_other'] ) ) ? strip_tags( $new_instance['locale_other'] ) : '';
 		
 		
 		return $instance;
