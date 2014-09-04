@@ -1,0 +1,13 @@
+/* This stylesheet is used to style the admin option form of the plugin. */
+
+.widget-half {
+width: 49%;
+float: left;
+margin-bottom: 0px;
+}
+.widget-half select{
+	width:95%;
+}
+.clearfix {
+clear: both;
+}
