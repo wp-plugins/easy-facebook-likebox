@@ -244,7 +244,7 @@ class Easy_Facebook_Likebox_Admin {
   fjs.parentNode.insertBefore(js, fjs);
 }(document, \'script\', \'facebook-jssdk\'));</script>
 
-<div class="fb-like" data-href="https://facebook.com/jwebsol" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
+<div class="fb-like" data-href="https://facebook.com/jwebsol" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
 			  	  <br /><br />
 		<a href="%s" class="button button-primary">I have supported already</a>				  
 		', 'efbl'),
