@@ -252,12 +252,21 @@ class Easy_Facebook_Like_Box_Widget extends WP_Widget {
 			$locale = $locale_other;
 		}
 		
+		if( !empty($fb_appid) ){
+			$fb_appid = 'fb_appid="'.$fb_appid.'"';
+		}
+		
+		$fb_url = parse_url( $fanpage_url );
+		$fanpage_url = str_replace('/', '', $fb_url['path']);
+		/*echo "<pre>";
+		print_r( $fb_url  );
+  		echo "</pre>";*/
  		
 		$responsive = (  empty( $responsive ) ) ? strip_tags( 0 ) : $responsive;
 		
 		?>
         
-        <p style="background:#ddd; padding:5px; "><?php echo '[efb_likebox fanpage_url="'.$fanpage_url.'" fb_appid="'.$fb_appid.'" box_width="'.$box_width.'" box_height="'.$box_height.'" colorscheme="'.$colorscheme.'" locale="'.$locale.'" responsive="'.$responsive.'" show_faces="'.$show_faces.'" show_header="'.$show_header.'" show_stream="'.$show_stream.'" show_border="'.$show_border.'" ]'?></p>
+        <p style="background:#ddd; padding:5px; "><?php echo '[efb_likebox fanpage_url="'.$fanpage_url.'" '.$fb_appid.' box_width="'.$box_width.'" box_height="'.$box_height.'" colorscheme="'.$colorscheme.'" locale="'.$locale.'" responsive="'.$responsive.'" show_faces="'.$show_faces.'" show_header="'.$show_header.'" show_stream="'.$show_stream.'" show_border="'.$show_border.'" ]'?></p>
          
 		<?php 
 	}

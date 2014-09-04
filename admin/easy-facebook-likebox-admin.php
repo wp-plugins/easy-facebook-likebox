@@ -82,7 +82,7 @@ class Easy_Facebook_Likebox_Admin {
 		
 		add_action( 'admin_init', array( $this, 'i_have_supported_efbl') );
 		
-		if ( get_option('I_HAVE_SUPPORTED_THE_EFBL_PLUGIN') != 1 )
+		//if ( get_option('I_HAVE_SUPPORTED_THE_EFBL_PLUGIN') != 1 )
 			add_action( 'admin_notices', array( $this, 'post_installtion_upgrade_nag') );
  
 	}
@@ -228,12 +228,12 @@ class Easy_Facebook_Likebox_Admin {
 		$plugin_verstion = Easy_Facebook_Likebox::VERSION;
 		
 		$version_key = '_efbl_version';
-		$notice_key = '_efbl_notice';
+		$notice_key = 'I_HAVE_SUPPORTED_THE_EFBL_PLUGIN';
 		
-		//if ( get_site_option( $version_key ) == $plugin_verstion && get_site_option( $notice_key ) == 1 ) return;
+		if ( get_site_option( $version_key ) == $plugin_verstion && get_site_option( $notice_key ) == 1 ) return;
 
 		$msg = sprintf(__('Thanks for installting/upgrading the Easy Facebook Likebox Plugin! If you like this plugin, please consider some <a href="%s" target="_blank">donation</a> and/or <a href="%s" target="_blank">rating it</a>!
-		Support us by liking us on facebook! 
+		Support us by liking our facebook fan page! 
 		
 	  <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -254,9 +254,8 @@ class Easy_Facebook_Likebox_Admin {
 				);
 		echo "<div class='update-nag'>$msg</div>";
 
-		//update_site_option( $version_key, $plugin_verstion );
-		//update_site_option( $notice_key, 1 );
-	}
+		update_site_option( $version_key, $plugin_verstion );
+ 	}
 	
 	function i_have_supported_efbl(){
 		

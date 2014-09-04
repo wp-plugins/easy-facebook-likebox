@@ -28,7 +28,7 @@
             	<li> Add the "Easy Facebook Likebox" widget in sidebar to show the like box in your website sidebar</li>
                 <li> Add widget in sidebar and generate shortcode by saving the widgets optiosn to show likebox somewhere else on your website.</li>
                 <li> You can also directly add below shortcode (without quotes) in post/page editor and change default values with your custom one according to your needs and requirments.
-                "[efb_likebox fanpage_url="Your_fb_fan_page_url_goes_here" fb_appid="" box_width="300" box_height="" colorscheme="light" show_faces="1" show_header="1" show_stream="0" show_border="1" ]"
+                "[efb_likebox fanpage_url="YOUR_FB_FANPAGE_NAME_OR_ID" fb_appid="" box_width="300" box_height="" colorscheme="light" show_faces="1" show_header="1" show_stream="0" show_border="1" ]"
                 </li>
              </ol>
             </p>
@@ -41,7 +41,7 @@
 
 <div id="postbox-container-1" class="postbox-container">
 	<div id="normal-sortables" class="meta-box-sortables ui-sortable"><div id="dashboard_right_now" class="postbox ">
-<div class="handlediv" title="Click to toggle"><br></div><h3 class="hndle"><span> Support us by liking us on facebook!</span></h3>
+<div class="handlediv" title="Click to toggle"><br></div><h3 class="hndle"><span> Support us by liking our fan page!</span></h3>
 <div class="inside">
 	<div class="main">
 	 
