@@ -13,11 +13,15 @@
  */
 ?>
 
-<div class="wrap">
+<div class="wrap" id="dashboard-widgets">
 
-	<h2><?php echo esc_html( get_admin_page_title() ); ?></h2>
-    
-    <p>Thanks for installing the plugin.</p>
+<div id="postbox-container-1" class="postbox-container">
+	<div id="normal-sortables" class="meta-box-sortables ui-sortable"><div id="dashboard_right_now" class="postbox ">
+<div class="handlediv" title="Click to toggle"><br></div><h3 class="hndle"><span><?php echo esc_html( get_admin_page_title() ); ?></span></h3>
+<div class="inside">
+	<div class="main">
+	 
+	 <p>Thanks for installing the plugin.</p>
     
     <p>Here are steps and ways you can use this plugin.
     		<ol>
@@ -28,8 +32,46 @@
                 </li>
              </ol>
             </p>
-     <p>I am working on the betterment and improvement of this plugin so stay tuned.</p>       
+     <p>I am working on the betterment and improvement of this plugin so stay tuned.</p> </div>
+	</div>
+</div>
+ 
+</div>	</div>
 
-	<!-- @TODO: Provide markup for your options page here. -->
+
+<div id="postbox-container-1" class="postbox-container">
+	<div id="normal-sortables" class="meta-box-sortables ui-sortable"><div id="dashboard_right_now" class="postbox ">
+<div class="handlediv" title="Click to toggle"><br></div><h3 class="hndle"><span> Support us by liking us on facebook!</span></h3>
+<div class="inside">
+	<div class="main">
+	 
+<div class="fb-like-box" data-href="https://www.facebook.com/jwebsol" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true"></div>
+     <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=517129121754984&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>       
+
+ </div>
+	</div>
+</div>
+ 
+</div>	</div>	 
+    
+   
+     
+    
+ 
 
 </div>
+<style type="text/css">
+#dashboard_right_now li{
+	width:100%;
+}
+.hndle{
+	padding: 10px;
+}
+</style>
