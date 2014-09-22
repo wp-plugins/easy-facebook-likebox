@@ -89,6 +89,7 @@ http://wordpress.org/support/topic/need-feed-back-on-plugin-feature/
 6. Facebook like box backend view with options description.
 
 
+
 == Changelog ==
 = 2.0.0 =
 
