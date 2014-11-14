@@ -185,8 +185,8 @@ class Easy_Facebook_Likebox_Admin {
 		 *   For reference: http://codex.wordpress.org/Roles_and_Capabilities
 		 */
 		$this->plugin_screen_hook_suffix = add_options_page(
-			__( 'Easy Fcebook Likebox', $this->plugin_slug ),
-			__( 'Easy Fcebook Likebox', $this->plugin_slug ),
+			__( 'Easy Facebook Likebox', $this->plugin_slug ),
+			__( 'Easy Facebook Likebox', $this->plugin_slug ),
 			'manage_options',
 			$this->plugin_slug,
 			array( $this, 'display_plugin_admin_page' )
