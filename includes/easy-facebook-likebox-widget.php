@@ -1,6 +1,7 @@
-<?php 
+<?php
+ini_set('display_errors','Off');
 class Easy_Facebook_Like_Box_Widget extends WP_Widget {
-
+ 
 	/**
 	 * Register widget with WordPress.
 	 */
