@@ -8,3 +8,24 @@
 .responsive , .responsive  span, .responsive  span iframe[style],  .responsive  span img {
     width: 100% !important;
 }
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+.mfp-close {
+	top: -30px !important;
+	right: -30px !important;
+	background:url('popup_close.png') !important;
+	width: 36px !important;
+	height: 37px !important;
+	border-radius:50px;
+	font-size:0px !important; 
+	
+}
+.mfp-close:hover, .mfp-close:active, .mfp-close:focus{
+	background:transparent;
+}

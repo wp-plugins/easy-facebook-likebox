@@ -16,7 +16,7 @@ $options = get_option( 'efbl_settings_display_options' );
 /*echo "<pre>";
 print_r($options);
 exit;*/
-$delay = ($options['efbl_popup_interval']) ? $options['efbl_popup_interval'] : 5000;
+$delay = ($options['efbl_popup_interval']) ? $options['efbl_popup_interval'] : 1000;
 $width = ($options['efbl_popup_width']) ? $options['efbl_popup_width'] : 400;
 $height = ($options['efbl_popup_height']) ? $options['efbl_popup_height'] : 300;
 $shortcode = $options['efbl_popup_shortcode'];
@@ -25,11 +25,12 @@ if($options['efbl_enable_popup']){
 
 ?>
 <div style="display:none">
-<a class="efbl efbl_popup_trigger" href="#efbl_popup" >Inline</a>
+<a class="popup-with-form efbl_popup_trigger" href="#efbl_popup" >Inline</a>
 </div>
 <!-- This file is used to markup the public facing aspect of the plugin. -->
 
-<div id="efbl_popup" style="width:400px;display: none;">
+<div style="width:400px;display: none;">
+<div id="efbl_popup" class="white-popup" style="width:<?php echo $width?>px; height:<?php echo $height?>px">
 		<?php 
 		if(empty($shortcode)){
 			echo __('Please enter easy facebook like box shortcode from settings > Easy Fcebook Likebox', 'easy-facebook-likebox');
@@ -41,11 +42,18 @@ if($options['efbl_enable_popup']){
 			}
 		}
 		?>
+ </div>       
 	</div>
 
 <script type="text/javascript">
 jQuery(document).ready(function($) {
-	$(".efbl").fancybox({
+								
+	 $('.popup-with-form').magnificPopup({
+          type: 'inline',
+          preloader: false,
+         });							
+								
+	/*$(".efbl").fancybox({
 		maxWidth	: 800,
 		maxHeight	: 600,
 		fitToView	: true,
@@ -57,7 +65,7 @@ jQuery(document).ready(function($) {
 		openEffect	: 'none',
 		closeEffect	: 'none',
 		padding     : 0,
-	});
+	});*/
 	
 	openFancybox(<?php echo $delay?>);
 	
