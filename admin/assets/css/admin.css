@@ -1,0 +1,63 @@
+/* This stylesheet is used to style the admin option form of the plugin. */
+
+.widget-half {
+width: 49%;
+float: left;
+margin-bottom: 0px;
+}
+.widget-half select{
+	width:95%;
+}
+.clearfix {
+clear: both;
+}
+
+.form-table th {
+width: 400px;
+}
+.button_container{
+	float:left;
+	width:49%;
+}
+div#easy-facebook-likebox_popup {
+	float: left;
+	width: 100%;
+}
+.button_container p.submit{
+	margin-bottom: 25px !important;
+}
+.go_pro_ad{
+	font-size:26px;
+	text-decoration:none;
+	padding:25px;
+	background: #7cc68d;
+	 text-shadow: 0 -1px 0 rgba(0,0,0,0.2); 
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	color:#FFF;
+	position:fixed;
+	right:50px;
+	top:70px;
+	z-index:99999;
+}
+.go_pro_ad:hover, .buy_button:hover{
+	color:#FFF;
+	background:#67BD7B;
+}
+.promotional_text{
+	display:inline-block;
+}
+
+.buy_button{
+	font-size:26px;
+	text-decoration:none;
+	padding:100px;
+	background: #7cc68d;
+	 text-shadow: 0 -1px 0 rgba(0,0,0,0.2); 
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	color:#FFF;
+	float:right;	 
+}
