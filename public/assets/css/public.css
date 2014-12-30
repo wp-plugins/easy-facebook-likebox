@@ -17,14 +17,13 @@
   margin: 20px auto;
 }
 .mfp-close {
-	top: -30px !important;
-	right: -30px !important;
+	top: -18px !important;
+	right: -18px !important;
 	background:url('popup_close.png') !important;
 	width: 36px !important;
 	height: 37px !important;
-	border-radius:50px;
-	font-size:0px !important; 
-	
+ 	font-size:0px !important; 
+	background:transparent;
 }
 .mfp-close:hover, .mfp-close:active, .mfp-close:focus{
 	background:transparent;
