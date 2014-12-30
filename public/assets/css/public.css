@@ -1,0 +1,30 @@
+/* This stylesheet is used to style the public-facing components of the plugin. */
+#fb-root {
+    display: none;
+}
+
+/* To fill the container and nothing else */
+
+.responsive , .responsive  span, .responsive  span iframe[style],  .responsive  span img {
+    width: 100% !important;
+}
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+.mfp-close {
+	top: -18px !important;
+	right: -18px !important;
+	background:url('popup_close.png') !important;
+	width: 36px !important;
+	height: 37px !important;
+ 	font-size:0px !important; 
+	background:transparent;
+}
+.mfp-close:hover, .mfp-close:active, .mfp-close:focus{
+	background:transparent;
+}
