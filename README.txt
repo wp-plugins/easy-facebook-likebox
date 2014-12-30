@@ -76,7 +76,7 @@ Features:
 
 == Upgrade Notice ==
 = 3.1.0 =
-Major realease! Must Update the plugin if you were missing the facebook like box in PopUp. Now display like box in auto display PopUp (Auto PopUp). Modern and resposive PopUp included.
+Major realease! Must Update the plugin if you were missing the facebook like box in PopUp. Now display like box in auto display PopUp (Auto PopUp).
 
 = 3.0.0 =
 Major realease! Must Update the plugin if you were missing the facebook like box in PopUp. Now display like box in auto display PopUp (Auto PopUp).
@@ -117,7 +117,6 @@ http://wordpress.org/support/topic/need-feed-back-on-plugin-feature/
 == Changelog ==
 = 3.1 =
 
-* Modern and resposive PopUp included.
 * Added another great feature of Auto PopUp. Now you can display easy facebook like box in PopUp.
 * Tested upto WordPress 4.1
 
