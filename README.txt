@@ -53,7 +53,9 @@ Features:
 1. Extended optional settings to personalize in widget and shortcode
 1. Generate shortcode using widget form
 
-Pro Features
+
+**Pro Features:**
+
 1. Pro version support all WordPress shortcodes and even html in PopUp.
 1. Set PopUp delay from Back-end.
 1. Show PopUp on home page only.
