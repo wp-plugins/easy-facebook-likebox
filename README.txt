@@ -47,6 +47,7 @@ You can use easy facebook like box in number of ways:
 
 Features: 
 
+
 1. Likebox in responsive PopUp/Modal window (New feature)
 1. Now support optional **responsive** layout
 1. Support 75 different locales
@@ -55,6 +56,7 @@ Features:
 
 
 **Pro Features:**
+
 
 1. Pro version support all WordPress shortcodes and even html in PopUp.
 1. Set PopUp delay from Back-end.
