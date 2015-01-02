@@ -55,7 +55,7 @@ Features:
 1. Generate shortcode using widget form
 
 
-**Pro Features:**
+**[Pro Features:](http://jwebsol.com/product/easy-facebook-like-box-pro/ "GoPro")**
 
 
 1. Pro version support all WordPress shortcodes and even html in PopUp.
@@ -67,7 +67,10 @@ Features:
 1. Hide on mobile devices
 1. Premium Support on priority basis. 
 
-[GoPro](http://jwebsol.com/product/easy-facebook-like-box-pro/ "GoPro")
+### [GoPro](http://jwebsol.com/product/easy-facebook-like-box-pro/ "GoPro")
+
+Need support feel free to open support ticket in one of our following forums:
+[Free Support](https://wordpress.org/support/plugin/easy-facebook-likebox "Free Support") | [Premium/Priority Support](http://jwebsol.com/forums/forum/easy-facebook-like-box-pro/ "Premium/Priority Support")
 
 == Installation ==
 1. Upload "easy-facebook-likebox" to the "/wp-content/plugins/" directory.
