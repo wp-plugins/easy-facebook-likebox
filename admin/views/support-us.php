@@ -25,5 +25,5 @@
 }(document, 'script', 'facebook-jssdk'));</script> 
 </div>
 <div class="" style="width:49%; display: inline;">
-<a target="_blank" class="buy_button" href="http://jwebsol.com/product/easy-facebook-like-box-pro/" title="GoPro">Buy Pro Versio of this plugin</a>
+<a target="_blank" class="buy_button" href="https://jwebsol.com/product/easy-facebook-like-box-pro/" title="GoPro">Buy Pro Versio of this plugin</a>
 </div>

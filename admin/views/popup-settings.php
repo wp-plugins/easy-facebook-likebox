@@ -22,4 +22,4 @@ do_settings_sections( 'efbl_settings_display_options' );
 <?php 
 submit_button();
 ?></div>
-<h2 class="promotional_text">Want more control over PopUp? Try our premimum version! <a target="_blank" class="" href="http://jwebsol.com/product/easy-facebook-like-box-pro/" title="GoPro">Click here for pricing & details</a></h2>
+<h2 class="promotional_text">Want more control over PopUp? Try our premimum version! <a target="_blank" class="" href="https://jwebsol.com/product/easy-facebook-like-box-pro/" title="GoPro">Click here for pricing & details</a></h2>

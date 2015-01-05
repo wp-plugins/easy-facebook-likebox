@@ -14,8 +14,8 @@ Easy facebook like box WordPress plugin allows you to display fan page posts, li
 
 Displays a Facebook Like Box. The Facebook Like Box is a social plugin that enables Facebook Page owners to attract and gain Likes from their own website. Easy facebook like box display fan page posts, like button, and connections on your website using widget, shortcode or in AutoPop.
 
-[Fixed width demo](http://jwebsol.com/easy-facebook-like-box-plugin-demo/ "See this plugin in action (Fixed width)") | [Responsive demo](http://jwebsol.com/easy-facebook-like-box-responsive-demo/ "See this plugin in action (Responsive)") |
-[Auto PopUp demo](http://jwebsol.com/easy-facebook-like-box-auto-popup-demo/ "See this plugin in action (Auto PopUp)")
+[Fixed width demo](https://jwebsol.com/easy-facebook-like-box-plugin-demo/ "See this plugin in action (Fixed width)") | [Responsive demo](https://jwebsol.com/easy-facebook-like-box-responsive-demo/ "See this plugin in action (Responsive)") |
+[Auto PopUp demo](https://jwebsol.com/easy-facebook-like-box-auto-popup-demo/ "See this plugin in action (Auto PopUp)")
 
 **Options:**
 
@@ -55,7 +55,7 @@ Features:
 1. Generate shortcode using widget form
 
 
-**[Pro Features:](http://jwebsol.com/product/easy-facebook-like-box-pro/ "GoPro")**
+**[Pro Features:](https://jwebsol.com/product/easy-facebook-like-box-pro/ "GoPro")**
 
 
 1. Pro version support all WordPress shortcodes and even html in PopUp.
@@ -67,11 +67,11 @@ Features:
 1. Hide on mobile devices
 1. Premium Support on priority basis. 
 
-### [GoPro](http://jwebsol.com/product/easy-facebook-like-box-pro/ "GoPro")
+### [GoPro](https://jwebsol.com/product/easy-facebook-like-box-pro/ "GoPro")
 
 
 **Need support** feel free to open support ticket in one of our following forums:   
-[Free Support](https://wordpress.org/support/plugin/easy-facebook-likebox "Free Support") | [Premium/Priority Support](http://jwebsol.com/forums/forum/easy-facebook-like-box-pro/ "Premium/Priority Support")
+[Free Support](https://wordpress.org/support/plugin/easy-facebook-likebox "Free Support") | [Premium/Priority Support](https://jwebsol.com/forums/forum/easy-facebook-like-box-pro/ "Premium/Priority Support")
 
 == Installation ==
 1. Upload "easy-facebook-likebox" to the "/wp-content/plugins/" directory.

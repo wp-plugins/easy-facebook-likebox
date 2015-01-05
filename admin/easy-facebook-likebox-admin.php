@@ -296,7 +296,7 @@ class Easy_Facebook_Likebox_Admin {
 		<a href="%s" class="button button-primary">I have supported already</a>				  
 		', 'efbl'),
 				'https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=sjaved786%40gmail%2ecom&lc=US&item_name=Easy%20Facebook%20Like%20Box%20WordPress%20Plugin&item_number=efbl&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted',
-				'http://wordpress.org/plugins/easy-facebook-likebox/',
+				'https://jwebsol.com/product/easy-facebook-like-box-pro/',
 				get_admin_url('', 'options-general.php?page=easy-facebook-likebox&efbl_supported=1')
 				);
 		echo "<div class='update-nag'>$msg</div>";
