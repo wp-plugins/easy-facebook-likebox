@@ -14,9 +14,8 @@ Easy facebook like box WordPress plugin allows you to display fan page posts, li
 
 Displays a Facebook Like Box. The Facebook Like Box is a social plugin that enables Facebook Page owners to attract and gain Likes from their own website. Easy facebook like box display fan page posts, like button, and connections on your website using widget, shortcode or in AutoPop.
 
-[Fixed width demo](https://jwebsol.com/easy-facebook-like-box-plugin-demo/ "See this plugin in action (Fixed width)") | [Responsive demo](https://jwebsol.com/easy-facebook-like-box-responsive-demo/ "See this plugin in action (Responsive)") |
-[Auto PopUp demo](https://jwebsol.com/easy-facebook-like-box-auto-popup-demo/ "See this plugin in action (Auto PopUp)") |
-[GoPro](https://jwebsol.com/product/easy-facebook-like-box-pro/ "Need more! Check Pro version.")
+[Fixed width demo](https://jwebsol.com/easy-facebook-like-box-plugin-demo/ "See this plugin in action (Fixed width)") | [Responsive demo](https://jwebsol.com/easy-facebook-like-box-responsive-demo/ "See this plugin in action (Responsive)") | 
+[Auto PopUp demo](https://jwebsol.com/easy-facebook-like-box-auto-popup-demo/ "See this plugin in action (Auto PopUp)") |  [GoPro](https://jwebsol.com/product/easy-facebook-like-box-pro/ "Need more! Check Pro version.")
 
 **Options:**
 
