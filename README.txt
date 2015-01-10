@@ -17,9 +17,7 @@ Displays a Facebook Like Box. The Facebook Like Box is a social plugin that enab
 [Fixed width demo](https://jwebsol.com/easy-facebook-like-box-plugin-demo/ "See this plugin in action (Fixed width)") | [Responsive demo](https://jwebsol.com/easy-facebook-like-box-responsive-demo/ "See this plugin in action (Responsive)") | 
 [Auto PopUp demo](https://jwebsol.com/easy-facebook-like-box-auto-popup-demo/ "See this plugin in action (Auto PopUp)") |  [GoPro](https://jwebsol.com/product/easy-facebook-like-box-pro/ "Need more! Check Pro version.")
 
-**Options:**
-
-
+**Options:**   
 1. Facebook Page URL - enter an URL address to the Facebook fan page
 1. Width - set the width of the module in pixels. The default width is 250px
 1. Height - With the stream displayed and 8 connections the default height is 556px. With no stream displayed and 8 connections the default height is 271px. With no connections and no stream the default height is 63px
@@ -45,9 +43,7 @@ You can use easy facebook like box in number of ways:
 * Want to display in a template paste below code along with your optional settings.
 `<?php echo do_shortcode( '[efb_likebox fanpage_url="YOUR_FB_FANPAGE_URL" fb_appid="OPTIONAL_SEE_FAQ" box_width="WIDTH_OF_BOX_IN_PIXELS" box_height="HEIGHT_OF_BOX_IN_PIXELS" locale="NAME_OF_YOUR_LANGUAGE_LOCAE(default en_US)" responsive="RESPONSIVE_FOR_MOBILE(1/0)" colorscheme="CHOSEN_COLOSCHEME(light/dark)" show_faces="SHOW_CONNECTIONS(1/0)" show_header="SHOW_HEADER(1/0)" show_stream="SHOW_STREAM_POSTS(1/0)" show_border="DISPLAY_BORDER(1/0)"]' ); ?>`
 
-Features: 
-
-
+Features:   
 1. Likebox in responsive PopUp/Modal window (New feature)
 1. Now support optional **responsive** layout
 1. Support 75 different locales
@@ -55,9 +51,7 @@ Features:
 1. Generate shortcode using widget form
 
 
-**[Pro Features:](https://jwebsol.com/product/easy-facebook-like-box-pro/ "GoPro")**
-
-
+**[Pro Features:](https://jwebsol.com/product/easy-facebook-like-box-pro/ "GoPro")**   
 1. Pro version support all WordPress shortcodes and even html in PopUp.
 1. Set PopUp delay from Back-end.
 1. Show PopUp on home page only.
