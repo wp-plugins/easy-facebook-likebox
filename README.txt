@@ -64,7 +64,7 @@ Features:
 1. Hide on mobile devices
 1. Premium Support on priority basis. 
 
-### [GoPro](https://jwebsol.com/product/easy-facebook-like-box-pro/ "GoPro")
+###[GoPro](https://jwebsol.com/product/easy-facebook-like-box-pro/ "GoPro")
 
 
 **Need support** feel free to open support ticket in one of our following forums:   
