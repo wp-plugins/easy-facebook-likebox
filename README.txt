@@ -64,11 +64,9 @@ Features:
 1. Hide on mobile devices
 1. Premium Support on priority basis. 
 
-###[GoPro](https://jwebsol.com/product/easy-facebook-like-box-pro/ "GoPro")
-
 
 **Need support** feel free to open support ticket in one of our following forums:   
-[Free Support](https://wordpress.org/support/plugin/easy-facebook-likebox "Free Support") | [Premium/Priority Support](https://jwebsol.com/forums/forum/easy-facebook-like-box-pro/ "Premium/Priority Support")
+[Free Support](https://wordpress.org/support/plugin/easy-facebook-likebox "Free Support") | [Premium/Priority Support](https://jwebsol.com/forums/forum/easy-facebook-like-box-pro/ "Premium/Priority Support") | [GoPro](https://jwebsol.com/product/easy-facebook-like-box-pro/ "GoPro")
 
 == Installation ==
 1. Upload "easy-facebook-likebox" to the "/wp-content/plugins/" directory.
