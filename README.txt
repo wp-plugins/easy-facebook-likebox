@@ -60,9 +60,9 @@ Features:
 1. Show PopUp on home page only.
 1. Show PopUp if visitors are logged in
 1. Show PopUp if visitors are not logged in.
-1. Close button act as never show again
+1. Close button act as never show again (only once).
 1. Hide on mobile devices
-1. Premium Support on priority basis. 
+1. **Priority Support.** 
 
 
 **Need support** feel free to open support ticket in one of our following forums:   
