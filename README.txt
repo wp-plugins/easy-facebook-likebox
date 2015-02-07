@@ -19,15 +19,24 @@ Displays a Facebook Like Box. The Facebook Like Box is a social plugin that enab
 
 ### Features:
 
-1. Likebox in responsive PopUp/Modal window (New feature)
-1. Now support optional **responsive** layout
-1. Support 75 different locales
-1. Extended optional settings to personalize in widget and shortcode
-1. Generate shortcode using widget form
+1. Two color schemes (light/dark).
+1. Show or hide faces/connections who already liked your page.
+1. Show or hide header/logo.
+1. Show or hide latest facebook fan page posts.
+1. Show or hide border around the like box.
+1. Now support optional **responsive** layout.
+1. Dispaly like box in page/post/custom posts using shortcodes easily generated while saving widgets.
+1. Set fixed width and height.
+1. Chose your desired language or input your own language (if not in list).
+1. Support 75 different locales.
+1. Like box in responsive PopUp/Modal window (New feature).
+1. Enable/Disable PopUp.
+1. All above options are available with PopUp.
+1. Generate shortcode using widget form.
 
 You can easily upgrade to [Easy Facebook Like Box Pro:](https://jwebsol.com/product/easy-facebook-like-box-pro/ "GoPro") for more features. 
 
-### [Pro Features:](https://jwebsol.com/product/easy-facebook-like-box-pro/ "GoPro")
+### Pro Features
 
 1. **Pro version support all WordPress shortcodes and even html in PopUp.**
 1. **Set PopUp delay from Back-end.**
@@ -37,6 +46,8 @@ You can easily upgrade to [Easy Facebook Like Box Pro:](https://jwebsol.com/prod
 1. **Close button act as never show again (only once).**
 1. **Hide on mobile devices.**
 1. **Priority Support.** 
+
+### How to use facebook like box widget, shortcode and PopUp. 
 
 **Options:**
 
