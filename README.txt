@@ -20,7 +20,7 @@ Displays a Facebook Like Box. The Facebook Like Box is a social plugin that enab
 ### Features:
 
 1. Two color schemes (light/dark).
-1. Show or hide faces/connections who already liked your page.
+1. Show or hide faces/connections.
 1. Show or hide header/logo.
 1. Show or hide latest facebook fan page posts.
 1. Show or hide border around the like box.
@@ -36,7 +36,7 @@ Displays a Facebook Like Box. The Facebook Like Box is a social plugin that enab
 
 You can easily upgrade to [Easy Facebook Like Box Pro:](https://jwebsol.com/product/easy-facebook-like-box-pro/ "GoPro") for more features. 
 
-### Pro Features
+### Pro Features:
 
 1. **Pro version support all WordPress shortcodes and even html in PopUp.**
 1. **Set PopUp delay from Back-end.**
@@ -48,6 +48,7 @@ You can easily upgrade to [Easy Facebook Like Box Pro:](https://jwebsol.com/prod
 1. **Priority Support.** 
 
 ### How to use facebook like box widget, shortcode and PopUp. 
+
 
 **Options:**
 
