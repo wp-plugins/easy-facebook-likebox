@@ -1,6 +1,6 @@
 === Easy Facebook Like Box ===
 Contributors: sjaved
-Tags: facebook, facebook likebox, likebox, like box, facebook like box,  facebook like box widget,  facebook like box shortcode, shortcode,  facebook like box plugin, facebook like box wordpress plugin, plugin, responsive facebook like box, responsive, facebook like box in 75 locales, facebook like box in 75 languages, facebook like box in PopUp, PopUp, Auto PopUp, like box in PopUp, fancybox, lightbox, seo, social media  
+Tags: facebook, facebook likebox, likebox, like box, facebook like box,  facebook like box widget,  facebook like box shortcode, shortcode,  facebook like box plugin, facebook like box wordpress plugin, plugin, responsive facebook like box, responsive, facebook like box in 75 locales, facebook like box in 75 languages, facebook like box in PopUp, PopUp, Auto PopUp, like box in PopUp, fancybox, lightbox, seo, social media, facebook badge, facebook button, facebook connect, facebook facepile, Facebook fan page, wordpress facebook like box, facebook share 
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=sjaved786%40gmail%2ecom&lc=US&item_name=Easy%20Facebook%20Like%20Box%20WordPress%20Plugin&item_number=efbl&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Requires at least: 3.3
 Tested up to: 4.1
@@ -147,4 +147,4 @@ http://wordpress.org/support/topic/need-feed-back-on-plugin-feature/
 
 = 1.0.0 =
 
-* Initial release.
+* Initial release. 
