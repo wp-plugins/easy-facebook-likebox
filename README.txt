@@ -43,7 +43,7 @@ You can easily upgrade to [Easy Facebook Like Box Pro:](https://jwebsol.com/prod
 1. **Show PopUp on home page only.**
 1. **Show PopUp if visitors are logged in**
 1. **Show PopUp if visitors are not logged in.**
-1. **Close button act as never show again (only once).**
+1. **Close button act as never show again (show only once).**
 1. **Hide on mobile devices.**
 1. **Priority Support.** 
 
