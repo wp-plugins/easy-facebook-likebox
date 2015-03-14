@@ -46,6 +46,7 @@ You can easily upgrade to [Easy Facebook Like Box Pro:](https://jwebsol.com/prod
 1. **Close button act as never show again (show only once).**
 1. **Hide on mobile devices.**
 1. **Priority Support.** 
+1. **And more...** 
 
 ### How to use facebook like box widget, shortcode and PopUp. 
 
