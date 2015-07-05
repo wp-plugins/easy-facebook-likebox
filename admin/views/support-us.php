@@ -13,7 +13,6 @@
  */
 				
 ?> 
-<div class="" style="width:50%; display: inline-block;">
 <div class="fb-like-box" data-href="https://www.facebook.com/jwebsol" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true"></div>
             <div id="fb-root"></div>
             <script>(function(d, s, id) {
@@ -22,8 +21,4 @@
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=517129121754984&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script> 
-</div>
-<div class="" style="width:49%; display: inline;">
-<a target="_blank" class="buy_button" href="https://jwebsol.com/product/easy-facebook-like-box-pro/" title="GoPro">Buy Pro Versio of this plugin</a>
-</div>
+}(document, 'script', 'facebook-jssdk'));</script>

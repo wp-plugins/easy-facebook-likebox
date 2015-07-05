@@ -12,17 +12,26 @@
  * @copyright 2014 Your Name or Company Name
  */
 				
-?> 
- <p><?php _e('Thanks for installing the plugin.', 'easy-facebook-likebox');?></p>
- 
-  <h3><?php _e('Widget or shortcode usage instructions.', 'easy-facebook-likebox');?></h3>
+?>   
+<h3><?php _e('Custom facebook feed widget or shortcode usage instructions.', 'easy-facebook-likebox');?></h3>
     
-    <p><?php _e('Here are easy steps to use this plugin.', 'easy-facebook-likebox');?>
+    <p><?php _e('Here are easy steps to use this feature.', 'easy-facebook-likebox');?>
+    		<ol>
+            	<li> <?php _e('Add the "Easy Facebook Feed" widget in sidebar to show the feed into your website sidebar', 'easy-facebook-likebox');?></li>
+                <li> <?php _e('Add "Easy Facebook Feed" widget in sidebar and generate shortcode by saving the widgets option to show custom facebook feed in posts, pages or custom posts.', 'easy-facebook-likebox');?> </li>
+                <li> <?php _e('You can also directly add below shortcode (without quotes) in post/page editor and change default values with your custom one according to your needs and requirments. "[efb_feed fanpage_url="YOUR_FB_FANPAGE_NAME_OR_URL" layout="CHOSE_LAYOUT(thumbnail/half/full)" image_size="CHOSE_IMAGE_SIZE(thumbnail/album/normal)" type="CHOSE_TYPE(page/group)" post_by="DISPLAY_POSTS_FROM(me/others/onlyothers)" show_logo="SHOW_HIDE_PAGE_LOGO(1/0)" show_image="SHOW_HIDE_IMAGES(1/0)" show_like_box="SHOW_HIDE_LIKEBOX(1/0)" post_number="NUMBER_OF_POST_DISPALAY(10)" post_limit="NUMBER_OF_POST_RETRIEVE(10)" cache_unit="NUMMBER_OF_MINUTES_HOURS_DAYS(1)" cache_duration="SELECT_CACHE_DURATION(minutes/hours/days)" ]" ', 'easy-facebook-likebox');?> 
+                </li>
+             </ol>
+            </p>
+            
+ 
+  <h3><?php _e('Like box widget or shortcode usage instructions.', 'easy-facebook-likebox');?></h3>
+    
+    <p><?php _e('Here are easy steps to use this fature.', 'easy-facebook-likebox');?>
     		<ol>
             	<li> <?php _e('Add the "Easy Facebook Likebox" widget in sidebar to show the like box in your website sidebar', 'easy-facebook-likebox');?></li>
-                <li> <?php _e('Add widget in sidebar and generate shortcode by saving the widgets optiosn to show likebox somewhere else on your website.', 'easy-facebook-likebox');?> </li>
-                <li> <?php _e('You can also directly add below shortcode (without quotes) in post/page editor and change default values with your custom one according to your needs and requirments.
-                "[efb_likebox fanpage_url="YOUR_FB_FANPAGE_NAME_OR_ID" fb_appid="" box_width="300" box_height="" colorscheme="light" show_faces="1" show_header="1" show_stream="0" show_border="1" ]"', 'easy-facebook-likebox');?> 
+                <li> <?php _e('Add widget in sidebar and generate shortcode by saving the widgets option to show likebox somewhere else on your website.', 'easy-facebook-likebox');?> </li>
+                <li> <?php _e('You can also directly add below shortcode (without quotes) in post/page editor and change default values with your custom one according to your needs and requirments. "[efb_likebox fanpage_url="YOUR_FB_FANPAGE_NAME_OR_URL" fb_appid="OPTIONAL_SEE_FAQ" box_width="WIDTH_OF_BOX_IN_PIXELS" box_height=HEIGHT_OF_BOX_IN_PIXELS""  responsive="1" show_faces="SHOW_CONNECTIONS(1/0)" show_stream="SHOW_STREAM_POSTS(1/0)" hide_cover="HIDE_COVER_PHOTO(1/0)" small_header="USE_SMALL_HEADER(1/0)" hide_cta="OPTONAL_HIDE_CUSTOM_CTA_BUTTON(1/0)" locale="NAME_OF_YOUR_LANGUAGE_LOCAE(default en_US)"]"', 'easy-facebook-likebox');?> 
                 </li>
              </ol>
             </p>
@@ -37,5 +46,6 @@
                 </li>
              </ol>
             </p>
-                     
+             
+                             
      <p><?php _e('I am constantly working on the betterment and improvement of this plugin so stay tuned.', 'easy-facebook-likebox');?></p><strong></strong>

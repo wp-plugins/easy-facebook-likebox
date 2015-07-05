@@ -1,14 +1,12 @@
 <?php 
 /**
- * Plugin Name:       Easy Facebook Likebox
+ * Plugin Name:       Easy Facebook Likebox Pro
  * Plugin URI:        httt://wordpress.org/plugins/easy-facebook-likebox
  * Description:       Easy Facebook like box WordPress plugin allows you to easly display facebook like box fan page on your website using either widget or shortcode to increase facbook fan page likes. You can use the shortcode generated after saving the facebook like box widget. Its completely customizable with lots of optional settings. Its also responsive facebook like box at the same time.
- * Version:           3.1
+ * Version:           4.0.0
  * Author:            Sajid Javed
  * Author URI:        http://jwebsol.com
  * Text Domain:       easy-facebook-likebox
- * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Domain Path:       /languages
  */
 
@@ -16,17 +14,20 @@
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
+error_reporting(0);
 
 /*----------------------------------------------------------------------------*
  * Public-Facing Functionality
  *----------------------------------------------------------------------------*/
 
 /*
- * @TODO:
+ * @EasyFacebookLikeBox:
  *
- * - replace `class-plugin-name.php` with the name of the plugin's class file
+ * - Include class for public `easy-facebook-likebox.php`
  *
  */
+ 
+require_once( plugin_dir_path( __FILE__ ) . 'public/includes/core-functions.php' );
 require_once( plugin_dir_path( __FILE__ ) . 'public/easy-facebook-likebox.php' );
 
 /*
@@ -85,9 +86,14 @@ if ( is_admin() && ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX ) ) {
  * Including widget class.
  */
  
-require_once( plugin_dir_path( __FILE__ ) . 'includes/easy-facebook-likebox-widget.php' );
+//require_once( plugin_dir_path( __FILE__ ) . 'includes/easy-facebook-likebox-widget.php' );
+require_once( plugin_dir_path( __FILE__ ) . 'includes/easy-custom-facebook-feed-widget.php' );
+require_once( plugin_dir_path( __FILE__ ) . 'includes/easy-facebook-page-plugin-widget.php' );
+
 // register Foo_Widget widget
 function register_fblx_widget() {
-    register_widget( 'Easy_Facebook_Like_Box_Widget' );
+    //register_widget( 'Easy_Facebook_Like_Box_Widget' );
+	register_widget( 'Easy_Custom_Facebook_Feed_Widget' );
+	register_widget( 'Easy_Facebook_Page_Plugin_Widget' );
 }
 add_action( 'widgets_init', 'register_fblx_widget' );

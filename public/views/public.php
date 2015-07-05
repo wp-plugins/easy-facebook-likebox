@@ -16,10 +16,11 @@ $options = get_option( 'efbl_settings_display_options' );
 /*echo "<pre>";
 print_r($options);
 exit;*/
-$delay = ($options['efbl_popup_interval']) ? $options['efbl_popup_interval'] : 1000;
-$width = ($options['efbl_popup_width']) ? $options['efbl_popup_width'] : 400;
-$height = ($options['efbl_popup_height']) ? $options['efbl_popup_height'] : 300;
+$delay = $options['efbl_popup_interval'];
+$width = $options['efbl_popup_width'];
+$height = $options['efbl_popup_height'];
 $shortcode = $options['efbl_popup_shortcode'];
+
 
 if($options['efbl_enable_popup']){
 
@@ -29,46 +30,39 @@ if($options['efbl_enable_popup']){
 </div>
 <!-- This file is used to markup the public facing aspect of the plugin. -->
 
-<div style="width:400px;display: none;">
-<div id="efbl_popup" class="white-popup" style="width:<?php echo $width?>px; height:<?php echo $height?>px">
+<div id="efbl_popup" class="white-popup  mfp-hide" style="width:<?php echo $width?>px; height:<?php echo $height?>px">
 		<?php 
 		if(empty($shortcode)){
 			echo __('Please enter easy facebook like box shortcode from settings > Easy Fcebook Likebox', 'easy-facebook-likebox');
 		}else{
- 			if( preg_match('/efb_likebox/i', $shortcode ) ){
-				echo do_shortcode($shortcode);
-			}else{
-				echo __('Please enter easy facebook like box shortcode from settings > Easy Fcebook Likebox', 'easy-facebook-likebox');
-			}
-		}
+			echo do_shortcode($shortcode);
+ 		}
 		?>
- </div>       
-	</div>
+</div>
 
 <script type="text/javascript">
 jQuery(document).ready(function($) {
-								
+	/*$.removeCookie('dont_show', { path: '/' });  */
+	
 	 $('.popup-with-form').magnificPopup({
           type: 'inline',
           preloader: false,
-         });							
-								
-	/*$(".efbl").fancybox({
-		maxWidth	: 800,
-		maxHeight	: 600,
-		fitToView	: true,
-		'scrolling'   : 'no',
-		width		: '<?php echo $width?>px',
-		height		: '<?php echo $height?>px',
-		autoSize	: false,
-		closeClick	: false,
-		openEffect	: 'none',
-		closeEffect	: 'none',
-		padding     : 0,
-	});*/
+		  
+		  <?php if($options['efbl_do_not_show_again'] == 1){?>
+		  callbacks: {
+			  close: function() {
+ 				  $.cookie('dont_show', '1' ,{ expires: 7, path: '/' } );	
+			  }
+		  },
+		  <?php }?>
+ 	 	 
+         });
+	 
+  	
 	
-	openFancybox(<?php echo $delay?>);
-	
+	if( $.cookie('dont_show') != 1) 
+		openFancybox(<?php echo $delay?>);
+
 });
 
 function openFancybox(interval) {

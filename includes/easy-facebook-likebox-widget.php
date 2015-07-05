@@ -1,5 +1,5 @@
 <?php
-ini_set('display_errors','Off');
+//ini_set('display_errors','Off');
 class Easy_Facebook_Like_Box_Widget extends WP_Widget {
  
 	/**
@@ -8,7 +8,7 @@ class Easy_Facebook_Like_Box_Widget extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'easy_racebook_likebox', // Base ID
-			__('Easy Facebook Likebox', 'easy-facebook-likebox'), // Name
+			__('Easy Facebook Likebox (deprecated)', 'easy-facebook-likebox'), // Name
 			array( 'description' => __( 'Drag and drop this widget for facebook like box integration', 'easy-facebook-likebox' ), ) // Args
 		);
 	}
