@@ -8,7 +8,7 @@ Stable tag: 4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Easy facebook like box WordPress plugin allows you to display custom facebook feed, page plugin (like box), like button, using widget, shortcode or in Auto PopUp. 
+Easy facebook like box WordPress plugin allows you to display custom facebook feed, page plugin (like box), like button, using widget, shortcode, Auto PopUp. 
 
 == Description ==
 
