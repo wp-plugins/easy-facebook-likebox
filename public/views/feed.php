@@ -22,7 +22,7 @@ $access_token = ($access_token) ? $access_token : '395202813876688|73e8ede72008b
 
 $post_limit = ($post_limit) ? $post_limit : '10';
 $number_of_posts = ($post_number) ? $post_number : '10';
-$layout = ($layout) ? $layout : 'halfwidth';
+if($layout == 'half'){ $layout = 'halfwidth'; }elseif($layout == 'full'){$layout = 'fullwidth';}else{$layout = 'thumbnail';}
 $image_size = ($image_size) ? $image_size : 'normal';
 
 if( !empty($show_logo) ) $show_logo = $show_logo; else $show_logo = 1;
@@ -183,38 +183,34 @@ if( !empty($fbData->data) ) {
 			
 			//get author image src
 			$author_image ='<a href="https://facebook.com/'.$page_id.'" ><img src="'.$auth_img_src.'" title="'. $story->from->name .'" width="40" height="40" /></a>';
-			
 			if($story->object_id and $show_image){
 				//Get story image
 				$pic = 'https://graph.facebook.com/'.$story->object_id.'/picture?type='.$image_size.'&width=9999&height=9999&access_token=' . $access_token . '';
+				$full_img_url = 'https://graph.facebook.com/'.$story->object_id.'/picture?type=normal&width=9999&height=9999&access_token=' . $access_token . '';
 				$pic_class = 'efbl_has_message';
 			}else{
 				$pic_class = 'efbl_no_image';
 			}
-			
 			if($story->message){
 				$message_class = 'efbl_has_message';
 			}else{
 				$message_class = 'efbl_no_message';
 			}
-	 
+	 		
 			//Divert to full width layout if no image or no video
 			if( $feed_type != 'video' and !isset($story->object_id))
-				$layout = 'fullwidth';
-			else
-				$layout = ($instance['layout']) ? $instance['layout'] : 'halfwidth';
-			
-			
+					$layout = 'fullwidth';
+				else{
+					if($instance['layout'] == 'half' || $instance['layout'] == 'halfwidth'){ $layout = 'halfwidth'; }elseif($instance['layout']  == 'full' || $instance['layout']  == 'fullwidth' ){$instance['layout']  = 'fullwidth';}else{$layout = 'thumbnail';}
+				}
 			//Start generating html
 				echo '<div id="efblcf" class="efbl_fb_story '.$layout.' '.$feed_type.' '.$pic_class.' '.$message_class.' ">';
 						if($story->object_id and $show_image and $feed_type != 'video' and !isset($story->source) ){
 							
 							//if image attached
 							echo '<div class="efbl_story_photo">';
-									
-									echo '<img src="' .$pic. '" width="'.$img_width.'"; height="'.$img_height.'"; />';
-									
-									echo '<a href="#efblcf_holder" data-imagelink="' .$pic. '" data-storylink="'.$story_link.'"  data-linktext="'.__('Read full story', 'easy-facebook-likebox').'" data-caption="'.$post_plain_text.'" class="efbl_feed_popup"><span class="efbl_hover"></span></a>';	
+ 									echo '<img src="' .$pic. '" width="'.$img_width.'" height="'.$img_height.'" />';
+ 									echo '<a href="#efblcf_holder" data-imagelink="' .$full_img_url. '" data-storylink="'.$story_link.'"  data-linktext="'.__('Read full story', 'easy-facebook-likebox').'" data-caption="'.$post_plain_text.'" class="efbl_feed_popup"><span class="efbl_hover"></span></a>';	
 							echo '</div>';
 							
 						}elseif( $feed_type == 'video' and $story->source){

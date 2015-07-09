@@ -30,7 +30,7 @@ msgid "Like box pup up settings"
 msgstr ""
 
 #: ../admin/easy-facebook-likebox-admin.php:191
-msgid "Support us by liking our fan page!"
+msgid "Support us by liking our fan page and/or consider some dontaion!"
 msgstr ""
 
 #: ../admin/easy-facebook-likebox-admin.php:241

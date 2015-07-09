@@ -1,9 +1,9 @@
 <?php 
 /**
- * Plugin Name:       Easy Facebook Likebox Pro
+ * Plugin Name:       Easy Facebook Likebox
  * Plugin URI:        httt://wordpress.org/plugins/easy-facebook-likebox
  * Description:       Easy Facebook like box WordPress plugin allows you to easly display facebook like box fan page on your website using either widget or shortcode to increase facbook fan page likes. You can use the shortcode generated after saving the facebook like box widget. Its completely customizable with lots of optional settings. Its also responsive facebook like box at the same time.
- * Version:           4.0.0
+ * Version:           4.1
  * Author:            Sajid Javed
  * Author URI:        http://jwebsol.com
  * Text Domain:       easy-facebook-likebox
@@ -92,7 +92,6 @@ require_once( plugin_dir_path( __FILE__ ) . 'includes/easy-facebook-page-plugin-
 
 // register Foo_Widget widget
 function register_fblx_widget() {
-    //register_widget( 'Easy_Facebook_Like_Box_Widget' );
 	register_widget( 'Easy_Custom_Facebook_Feed_Widget' );
 	register_widget( 'Easy_Facebook_Page_Plugin_Widget' );
 }

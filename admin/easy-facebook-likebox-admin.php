@@ -66,7 +66,7 @@ class Easy_Facebook_Likebox_Admin {
 		add_action( 'admin_init', array( $this, 'i_have_supported_efbl') );
 		
 		//if ( get_option('I_HAVE_SUPPORTED_THE_EFBL_PLUGIN') != 1 )
-			//add_action( 'admin_notices', array( $this, 'post_installtion_upgrade_nag') );
+			add_action( 'admin_notices', array( $this, 'post_installtion_upgrade_nag') );
  
 	}
 
@@ -176,7 +176,7 @@ class Easy_Facebook_Likebox_Admin {
 			'manage_options',
 			$this->plugin_slug,
 			array( $this, 'display_plugin_admin_page' ),
-			plugins_url( 'easy-facebook-likebox-pro/assets/PluginIcon.png' )
+			plugins_url( 'easy-facebook-likebox/assets/PluginIcon.png' )
 		);
 		
 		add_action('load-'.$this->plugin_screen_hook_suffix, array(&$this, 'on_load_page'));
@@ -191,7 +191,7 @@ class Easy_Facebook_Likebox_Admin {
 		add_meta_box('easy-facebook-feed', __('Settings', 'easy-facebook-likebox'), array(&$this, 'on_efbfeed_settings'), $this->plugin_screen_hook_suffix, 'easyfbfeed', 'core');
 		
  		add_meta_box('easy-facebook-likebox_popup', __('Like box pup up settings', 'easy-facebook-likebox'), array(&$this, 'on_popup_settings'), $this->plugin_screen_hook_suffix, 'additional', 'core');
-		add_meta_box('efbl-support_us_box', __( 'Support us by liking our fan page!' , 'easy-facebook-likebox'), array(&$this, 'on_support_us'), $this->pagehook, 'side', 'core');
+		add_meta_box('efbl-support_us_box', __( 'Support us by liking our fan page and/or consider some dontaion!' , 'easy-facebook-likebox'), array(&$this, 'on_support_us'), $this->pagehook, 'side', 'core');
  		
 		 
 	}
@@ -251,7 +251,7 @@ class Easy_Facebook_Likebox_Admin {
 	/**
 	 * Display a thank you nag when the plugin has been installed/upgraded.
 	 */
-	public function post_installtion_upgrade_nag() {
+	public function post_installtion_upgrade_nag() { 
  		if ( !current_user_can('install_plugins') ) return;
 		
 		$plugin_verstion = Easy_Facebook_Likebox::VERSION;
@@ -279,7 +279,7 @@ class Easy_Facebook_Likebox_Admin {
 		', $this->plugin_slug ),
 				'https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=sjaved786%40gmail%2ecom&lc=US&item_name=Easy%20Facebook%20Like%20Box%20WordPress%20Plugin&item_number=efbl&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted',
 				'http://wordpress.org/plugins/easy-facebook-likebox/',
-				get_admin_url('', 'options-general.php?page=easy-facebook-likebox&efbl_supported=1')
+				get_admin_url('', '/admin.php?page=easy-facebook-likebox&efbl_supported=1')
 				);
 		echo "<div class='update-nag'>$msg</div>";
 
@@ -447,8 +447,9 @@ class Easy_Facebook_Likebox_Admin {
 				'efbl_settings_display_options'
 		);
  			
-		/*echo I_HAVE_SUPPORTED_THE_EFBL_PLUGIN;	
-		exit;	*/
+		if(isset($_GET['efbl_supported'])) {
+			update_site_option( 'I_HAVE_SUPPORTED_THE_EFBL_PLUGIN', 1 );	
+ 		}
 	}
 	
 	function efbl_options_callback(){

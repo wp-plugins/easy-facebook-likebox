@@ -34,7 +34,7 @@ class Easy_Facebook_Likebox {
 	 *
 	 * @var     string
 	 */
-	const VERSION = '2.1.0';
+	const VERSION = '4.1';
 
 	/**
 	 * @TODO - Rename "plugin-name" to the name your your plugin
