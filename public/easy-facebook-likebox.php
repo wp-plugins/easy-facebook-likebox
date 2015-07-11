@@ -34,7 +34,7 @@ class Easy_Facebook_Likebox {
 	 *
 	 * @var     string
 	 */
-	const VERSION = '4.1';
+	const VERSION = '4.2';
 
 	/**
 	 * @TODO - Rename "plugin-name" to the name your your plugin
@@ -404,9 +404,9 @@ class Easy_Facebook_Likebox {
  
  		$show_stream = ( $show_stream == 1 ) ? 'data-show-posts=true' : 'data-show-posts=false'; 
 		$show_faces = ( $show_faces == 1 ) ? 'data-show-facepile=true' : 'data-show-facepile=false'; 
-		$hide_cover = ( $hide_cover == 1 ) ? 'data-hide-cover="true"' : 'data-hide-cover="false"' ;
+		$hide_cover = ( $hide_cover == 1 ) ? 'data-hide-cover="true"' : 'data-hide-cover=false' ;
 		
-		$responsive = ( $responsive == 1 ) ? 'data-adapt-container-widthtrue' : 'data-adapt-container-width=false'; 
+		$responsive = ( $responsive == 1 ) ? 'data-adapt-container-width=true' : 'data-adapt-container-width=false'; 
 		$hide_cta = ( $hide_cta == 1 ) ? 'data-hide-cta=true' : 'data-hide-cta=false'; 
 		$small_header = ( $small_header == 1 ) ? 'data-small-header="true"' : 'data-small-header="false"' ;
   		 
