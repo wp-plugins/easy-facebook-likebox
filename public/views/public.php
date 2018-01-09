@@ -51,7 +51,7 @@ jQuery(document).ready(function($) {
 		  <?php if($options['efbl_do_not_show_again'] == 1){?>
 		  callbacks: {
 			  close: function() {
- 				  $.cookie('dont_show', '1' ,{ expires: 7, path: '/' } );	
+ 				  $.cookie('efbl_dont_show', '1' ,{ expires: 7, path: '/' } );	
 			  }
 		  },
 		  <?php }?>
@@ -60,7 +60,7 @@ jQuery(document).ready(function($) {
 	 
   	
 	
-	if( $.cookie('dont_show') != 1) 
+	if( $.cookie('efbl_dont_show') != 1) 
 		openFancybox(<?php echo $delay?>);
 
 });
